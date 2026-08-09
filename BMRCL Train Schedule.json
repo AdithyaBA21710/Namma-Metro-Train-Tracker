@@ -1,0 +1,402 @@
+{
+  "_meta": {
+    "source": "BMRCL official timetable (bmrc.co.in/metro-timings), transcribed manually from timetable images",
+    "transcribedOn": "2026-08-09",
+    "notes": [
+      "headwayMin is minutes between consecutive trains within that [from,to] time window, at that terminus.",
+      "'schedule' = main end-to-end service (what should drive the core simulation).",
+      "'branches' = partial-route / short-loop services (Garudachar Palya, Mysore Road, Kempegowda short loops etc). Optional — add later for extra realism, not needed for a first working version.",
+      "Sunday tables had no branch/short-loop data published, so 'branches.sunday' is empty.",
+      "Where a source table used 'Head way' instead of 'Frequency' as a column label, treated as identical (headwayMin)."
+    ]
+  },
+
+  "purple": {
+    "displayName": "Purple",
+    "termini": ["Whitefield", "Challaghatta"],
+    "schedule": {
+      "monday": {
+        "Whitefield": [
+          {"from": "04:15", "to": "04:35", "headwayMin": 20},
+          {"from": "04:35", "to": "05:00", "headwayMin": 13},
+          {"from": "05:00", "to": "10:57", "headwayMin": 10},
+          {"from": "10:57", "to": "15:21", "headwayMin": 8},
+          {"from": "15:21", "to": "22:01", "headwayMin": 10},
+          {"from": "22:01", "to": "22:45", "headwayMin": 15}
+        ],
+        "Challaghatta": [
+          {"from": "04:15", "to": "04:35", "headwayMin": 20},
+          {"from": "04:35", "to": "05:15", "headwayMin": 15},
+          {"from": "05:15", "to": "06:54", "headwayMin": 11},
+          {"from": "06:54", "to": "12:20", "headwayMin": 10},
+          {"from": "12:20", "to": "16:45", "headwayMin": 8},
+          {"from": "16:45", "to": "23:05", "headwayMin": 10}
+        ]
+      },
+      "tuesday_friday": {
+        "Whitefield": [
+          {"from": "05:00", "to": "05:20", "headwayMin": 20},
+          {"from": "05:20", "to": "10:57", "headwayMin": 10},
+          {"from": "10:57", "to": "15:21", "headwayMin": 8},
+          {"from": "15:21", "to": "22:01", "headwayMin": 10},
+          {"from": "22:01", "to": "22:45", "headwayMin": 15}
+        ],
+        "Challaghatta": [
+          {"from": "05:00", "to": "05:20", "headwayMin": 20},
+          {"from": "05:20", "to": "06:00", "headwayMin": 15},
+          {"from": "06:00", "to": "06:54", "headwayMin": 11},
+          {"from": "06:54", "to": "12:20", "headwayMin": 10},
+          {"from": "12:20", "to": "16:02", "headwayMin": 8},
+          {"from": "16:02", "to": "23:05", "headwayMin": 10}
+        ]
+      },
+      "saturday": {
+        "Whitefield": [
+          {"from": "05:00", "to": "05:20", "headwayMin": 20},
+          {"from": "05:20", "to": "10:57", "headwayMin": 10},
+          {"from": "10:57", "to": "15:21", "headwayMin": 8},
+          {"from": "15:21", "to": "22:01", "headwayMin": 10},
+          {"from": "22:01", "to": "22:45", "headwayMin": 15}
+        ],
+        "Challaghatta": [
+          {"from": "05:00", "to": "05:20", "headwayMin": 20},
+          {"from": "05:20", "to": "06:00", "headwayMin": 15},
+          {"from": "06:00", "to": "06:54", "headwayMin": 11},
+          {"from": "06:54", "to": "12:20", "headwayMin": 10},
+          {"from": "12:20", "to": "16:45", "headwayMin": 8},
+          {"from": "16:45", "to": "23:05", "headwayMin": 10}
+        ]
+      },
+      "sunday": {
+        "Whitefield": [
+          {"from": "07:00", "to": "10:33", "headwayMin": 10},
+          {"from": "10:33", "to": "20:01", "headwayMin": 8},
+          {"from": "20:01", "to": "22:31", "headwayMin": 10},
+          {"from": "22:31", "to": "22:45", "headwayMin": 14}
+        ],
+        "Challaghatta": [
+          {"from": "07:00", "to": "07:50", "headwayMin": 15},
+          {"from": "07:50", "to": "12:00", "headwayMin": 10},
+          {"from": "12:00", "to": "21:28", "headwayMin": 8},
+          {"from": "21:28", "to": "23:05", "headwayMin": 10}
+        ]
+      }
+    },
+    "branches": {
+      "monday": {
+        "Garudachar Palya": [
+          {"from": "06:53", "to": "10:55", "headwayMin": 5},
+          {"from": "16:10", "to": "20:10", "headwayMin": 5}
+        ],
+        "Mysore Road": [
+          {"from": "07:22", "to": "10:20", "headwayMin": 5},
+          {"from": "16:53", "to": "21:02", "headwayMin": 5}
+        ],
+        "extraSegments": [
+          {"route": "Kempegowda to Whitefield", "from": "08:44", "to": "10:24", "headwayMin": 3.3},
+          {"route": "Mysore Road to Garudachar Palya", "from": "07:48", "to": "09:01", "headwayMin": 10},
+          {"route": "Pattandur Agrahara to Mysore Road", "from": "15:56", "to": "19:56", "headwayMin": 5}
+        ],
+        "shortLoopDepartures": {
+          "Kempegowda to Baiyappanahalli (morning)": ["07:55", "08:05", "08:48", "11:53"],
+          "Kempegowda to Pattandur Agrahara (morning)": ["08:58", "09:07", "09:18", "09:28", "09:39", "09:49", "10:00", "10:10", "10:21"],
+          "Kempegowda to Whitefield (morning)": ["10:39", "10:50", "11:00", "11:11", "11:22", "11:43"],
+          "Baiyappanahalli to Mysuru Road (evening)": ["16:14"],
+          "Baiyappanahalli to Kempegowda (evening)": ["17:36", "17:46", "18:27", "18:37"],
+          "Kempegowda to Baiyappanahalli (evening)": ["18:03", "18:13"],
+          "Kempegowda to Mahatma Gandhi Road (evening)": ["18:54", "19:04"],
+          "Mahatma Gandhi Road to Challaghatta (evening)": ["19:04", "19:14"]
+        }
+      },
+      "tuesday_friday": {
+        "Garudachar Palya": [
+          {"from": "06:53", "to": "10:55", "headwayMin": 5},
+          {"from": "16:10", "to": "20:10", "headwayMin": 5}
+        ],
+        "Mysore Road": [
+          {"from": "07:22", "to": "10:20", "headwayMin": 5},
+          {"from": "16:53", "to": "21:02", "headwayMin": 5}
+        ],
+        "extraSegments": [
+          {"route": "Kempegowda to Whitefield", "from": "08:44", "to": "10:24", "headwayMin": 3.3},
+          {"route": "Mysore Road to Garudachar Palya", "from": "07:48", "to": "09:01", "headwayMin": 10},
+          {"route": "Pattandur Agrahara to Mysore Road", "from": "15:56", "to": "19:56", "headwayMin": 5}
+        ],
+        "shortLoopDepartures": {
+          "Kempegowda to Baiyappanahalli (morning)": ["07:55", "08:05", "08:48", "11:53"],
+          "Kempegowda to Pattandur Agrahara (morning)": ["08:58", "09:07", "09:18", "09:28", "09:39", "09:49", "10:00", "10:10", "10:21"],
+          "Kempegowda to Whitefield (morning)": ["10:39", "10:50", "11:00", "11:11", "11:22", "11:43"],
+          "Baiyappanahalli to Mysuru Road (evening)": ["16:14"],
+          "Baiyappanahalli to Kempegowda (evening)": ["17:36", "17:46", "18:27", "18:37"],
+          "Kempegowda to Baiyappanahalli (evening)": ["18:03", "18:13"],
+          "Kempegowda to Mahatma Gandhi Road (evening)": ["18:54", "19:04"],
+          "Mahatma Gandhi Road to Challaghatta (evening)": ["19:04", "19:14"]
+        }
+      },
+      "saturday": {
+        "Garudachar Palya": [
+          {"from": "06:53", "to": "10:55", "headwayMin": 5},
+          {"from": "16:10", "to": "20:10", "headwayMin": 5},
+          {"from": "18:10", "to": "20:10", "headwayMin": 5}
+        ],
+        "Mysore Road": [
+          {"from": "07:22", "to": "10:20", "headwayMin": 5},
+          {"from": "17:02", "to": "21:02", "headwayMin": 5}
+        ],
+        "extraSegments": [
+          {"route": "Kempegowda to Whitefield", "from": "08:44", "to": "10:24", "headwayMin": 3.3},
+          {"route": "Mysore Road to Garudachar Palya", "from": "07:48", "to": "09:01", "headwayMin": 10},
+          {"route": "Pattandur Agrahara to Mysore Road", "from": "17:56", "to": "19:56", "headwayMin": 5},
+          {"route": "Baiyappanahalli to Mysore Road", "from": "16:19", "to": "20:19", "headwayMin": 5}
+        ],
+        "shortLoopDepartures": {
+          "Kempegowda to Baiyappanahalli": ["11:53"],
+          "Kempegowda to Pattandur Agrahara": ["08:58", "09:07", "09:28", "09:39", "10:00", "10:10"],
+          "Kempegowda to Whitefield": ["10:39", "10:50", "11:00", "11:11", "11:22", "11:43"]
+        }
+      },
+      "sunday": {}
+    }
+  },
+
+  "green": {
+    "displayName": "Green",
+    "termini": ["Madavara", "Silk Institute"],
+    "schedule": {
+      "monday": {
+        "Madavara": [
+          {"from": "04:15", "to": "04:40", "headwayMin": 25},
+          {"from": "05:00", "to": "06:15", "headwayMin": 15},
+          {"from": "06:15", "to": "10:25", "headwayMin": 10},
+          {"from": "10:25", "to": "10:39", "headwayMin": 7},
+          {"from": "10:39", "to": "15:51", "headwayMin": 8},
+          {"from": "15:51", "to": "19:44", "headwayMin": 10},
+          {"from": "19:44", "to": "20:24", "headwayMin": 8},
+          {"from": "20:24", "to": "22:04", "headwayMin": 10},
+          {"from": "22:04", "to": "22:40", "headwayMin": 10},
+          {"from": "22:40", "to": "22:57", "headwayMin": 15}
+        ],
+        "Silk Institute": [
+          {"from": "04:15", "to": "05:00", "headwayMin": 20},
+          {"from": "05:00", "to": "07:00", "headwayMin": 15},
+          {"from": "07:00", "to": "11:09", "headwayMin": 10},
+          {"from": "11:09", "to": "16:48", "headwayMin": 8},
+          {"from": "16:48", "to": "20:29", "headwayMin": 10},
+          {"from": "20:29", "to": "21:30", "headwayMin": 8},
+          {"from": "21:30", "to": "22:40", "headwayMin": 10},
+          {"from": "22:40", "to": "23:05", "headwayMin": 12.5}
+        ]
+      },
+      "tuesday_friday": {
+        "Madavara": [
+          {"from": "05:00", "to": "06:15", "headwayMin": 15},
+          {"from": "06:15", "to": "10:25", "headwayMin": 11},
+          {"from": "10:25", "to": "10:39", "headwayMin": 7},
+          {"from": "10:39", "to": "15:51", "headwayMin": 8},
+          {"from": "15:51", "to": "19:44", "headwayMin": 10},
+          {"from": "19:44", "to": "20:24", "headwayMin": 8},
+          {"from": "20:24", "to": "22:04", "headwayMin": 10},
+          {"from": "22:04", "to": "22:40", "headwayMin": 15}
+        ],
+        "Silk Institute": [
+          {"from": "05:00", "to": "07:00", "headwayMin": 15},
+          {"from": "07:00", "to": "11:09", "headwayMin": 10},
+          {"from": "11:09", "to": "16:48", "headwayMin": 8},
+          {"from": "16:48", "to": "20:29", "headwayMin": 10},
+          {"from": "20:29", "to": "21:30", "headwayMin": 8},
+          {"from": "21:30", "to": "22:40", "headwayMin": 10},
+          {"from": "22:40", "to": "23:05", "headwayMin": 12.5}
+        ]
+      },
+      "saturday": {
+        "Madavara": [
+          {"from": "05:00", "to": "06:15", "headwayMin": 15},
+          {"from": "06:15", "to": "10:39", "headwayMin": 11},
+          {"from": "10:39", "to": "16:01", "headwayMin": 8},
+          {"from": "16:01", "to": "16:23", "headwayMin": 5.5},
+          {"from": "16:23", "to": "19:52", "headwayMin": 11},
+          {"from": "19:52", "to": "20:24", "headwayMin": 8},
+          {"from": "20:24", "to": "22:04", "headwayMin": 10},
+          {"from": "22:04", "to": "23:00", "headwayMin": 15}
+        ],
+        "Silk Institute": [
+          {"from": "05:00", "to": "07:00", "headwayMin": 15},
+          {"from": "07:00", "to": "11:53", "headwayMin": 11},
+          {"from": "11:53", "to": "16:48", "headwayMin": 8},
+          {"from": "16:48", "to": "20:57", "headwayMin": 11},
+          {"from": "20:57", "to": "21:30", "headwayMin": 8},
+          {"from": "21:30", "to": "22:40", "headwayMin": 10},
+          {"from": "22:40", "to": "23:05", "headwayMin": 12.5}
+        ]
+      },
+      "sunday": {
+        "Madavara": [
+          {"from": "07:00", "to": "10:47", "headwayMin": 10},
+          {"from": "10:47", "to": "20:15", "headwayMin": 8},
+          {"from": "20:15", "to": "22:05", "headwayMin": 10},
+          {"from": "22:05", "to": "22:29", "headwayMin": 12},
+          {"from": "22:29", "to": "23:00", "headwayMin": 15}
+        ],
+        "Silk Institute": [
+          {"from": "07:00", "to": "07:58", "headwayMin": 15},
+          {"from": "07:58", "to": "12:08", "headwayMin": 10},
+          {"from": "12:08", "to": "21:44", "headwayMin": 8},
+          {"from": "21:44", "to": "22:44", "headwayMin": 10},
+          {"from": "22:44", "to": "23:05", "headwayMin": 12}
+        ]
+      }
+    },
+    "branches": {
+      "monday": {
+        "Nagasandra/Peenya Industry": [
+          {"from": "06:37", "to": "10:22", "headwayMin": 5},
+          {"from": "16:36", "to": "19:41", "headwayMin": 5}
+        ],
+        "Yelachenahalli": [
+          {"from": "07:20", "to": "10:50", "headwayMin": 5},
+          {"from": "16:58", "to": "20:22", "headwayMin": 5}
+        ]
+      },
+      "tuesday_friday": {
+        "Nagasandra/Peenya Industry": [
+          {"from": "06:37", "to": "10:22", "headwayMin": 5},
+          {"from": "16:36", "to": "19:41", "headwayMin": 5}
+        ],
+        "Yelachenahalli": [
+          {"from": "07:20", "to": "10:50", "headwayMin": 5},
+          {"from": "16:58", "to": "20:22", "headwayMin": 5}
+        ]
+      },
+      "saturday": {
+        "Nagasandra/Peenya Industry": [
+          {"from": "06:38", "to": "10:40", "headwayMin": 5.5},
+          {"from": "16:13", "to": "19:47", "headwayMin": 5.5}
+        ],
+        "Yelachenahalli": [
+          {"from": "07:21", "to": "11:23", "headwayMin": 5.5},
+          {"from": "16:58", "to": "20:36", "headwayMin": 5.5}
+        ]
+      },
+      "sunday": {}
+    }
+  },
+
+  "yellow": {
+    "displayName": "Yellow",
+    "termini": ["RV Road", "Bommasandra"],
+    "schedule": {
+      "monday": {
+        "RV Road": [
+          {"from": "05:05", "to": "05:35", "headwayMin": 30},
+          {"from": "05:35", "to": "06:00", "headwayMin": 25},
+          {"from": "06:00", "to": "06:40", "headwayMin": 20},
+          {"from": "06:40", "to": "06:56", "headwayMin": 16},
+          {"from": "06:56", "to": "07:07", "headwayMin": 11},
+          {"from": "07:07", "to": "08:27", "headwayMin": 10},
+          {"from": "08:27", "to": "09:23", "headwayMin": 8},
+          {"from": "09:23", "to": "10:33", "headwayMin": 7},
+          {"from": "10:33", "to": "11:05", "headwayMin": 8},
+          {"from": "11:05", "to": "16:45", "headwayMin": 10},
+          {"from": "16:45", "to": "18:58", "headwayMin": 7},
+          {"from": "18:58", "to": "20:34", "headwayMin": 8},
+          {"from": "20:34", "to": "21:34", "headwayMin": 10},
+          {"from": "21:34", "to": "21:45", "headwayMin": 11},
+          {"from": "21:45", "to": "22:20", "headwayMin": 12},
+          {"from": "22:20", "to": "22:40", "headwayMin": 20},
+          {"from": "22:40", "to": "23:55", "headwayMin": 25}
+        ],
+        "Bommasandra": [
+          {"from": "05:05", "to": "05:35", "headwayMin": 30},
+          {"from": "05:35", "to": "06:00", "headwayMin": 20},
+          {"from": "06:00", "to": "06:20", "headwayMin": 20},
+          {"from": "06:20", "to": "07:50", "headwayMin": 10},
+          {"from": "07:50", "to": "08:46", "headwayMin": 8},
+          {"from": "08:46", "to": "09:49", "headwayMin": 7},
+          {"from": "09:49", "to": "10:29", "headwayMin": 8},
+          {"from": "10:29", "to": "16:09", "headwayMin": 10},
+          {"from": "16:09", "to": "18:29", "headwayMin": 7},
+          {"from": "18:29", "to": "19:57", "headwayMin": 8},
+          {"from": "19:57", "to": "20:57", "headwayMin": 10},
+          {"from": "20:57", "to": "22:33", "headwayMin": 12},
+          {"from": "22:33", "to": "22:42", "headwayMin": 9}
+        ],
+        "totalRoundTrips": "114.5+01"
+      },
+      "tuesday_friday": {
+        "RV Road": [
+          {"from": "06:00", "to": "06:40", "headwayMin": 20},
+          {"from": "06:40", "to": "06:56", "headwayMin": 16},
+          {"from": "06:56", "to": "07:07", "headwayMin": 11},
+          {"from": "07:07", "to": "08:27", "headwayMin": 10},
+          {"from": "08:27", "to": "09:23", "headwayMin": 8},
+          {"from": "09:23", "to": "10:33", "headwayMin": 7},
+          {"from": "10:33", "to": "11:05", "headwayMin": 8},
+          {"from": "11:05", "to": "16:45", "headwayMin": 10},
+          {"from": "16:45", "to": "18:58", "headwayMin": 7},
+          {"from": "18:58", "to": "20:34", "headwayMin": 8},
+          {"from": "20:34", "to": "21:34", "headwayMin": 10},
+          {"from": "21:34", "to": "21:45", "headwayMin": 11},
+          {"from": "21:45", "to": "22:20", "headwayMin": 12},
+          {"from": "22:20", "to": "22:40", "headwayMin": 20},
+          {"from": "22:40", "to": "23:55", "headwayMin": 25}
+        ],
+        "Bommasandra": [
+          {"from": "06:00", "to": "06:20", "headwayMin": 20},
+          {"from": "06:20", "to": "07:50", "headwayMin": 10},
+          {"from": "07:50", "to": "08:46", "headwayMin": 8},
+          {"from": "08:46", "to": "09:49", "headwayMin": 7},
+          {"from": "09:49", "to": "10:29", "headwayMin": 8},
+          {"from": "10:29", "to": "16:09", "headwayMin": 10},
+          {"from": "16:09", "to": "18:29", "headwayMin": 7},
+          {"from": "18:29", "to": "19:57", "headwayMin": 8},
+          {"from": "19:57", "to": "20:57", "headwayMin": 10},
+          {"from": "20:57", "to": "22:33", "headwayMin": 12},
+          {"from": "22:33", "to": "22:42", "headwayMin": 9}
+        ],
+        "totalRoundTrips": "113+01"
+      },
+      "saturday": {
+        "RV Road": [
+          {"from": "06:00", "to": "06:25", "headwayMin": 20},
+          {"from": "06:25", "to": "07:05", "headwayMin": 20},
+          {"from": "07:05", "to": "07:20", "headwayMin": 15},
+          {"from": "07:20", "to": "07:31", "headwayMin": 11},
+          {"from": "07:31", "to": "20:31", "headwayMin": 10},
+          {"from": "20:31", "to": "22:07", "headwayMin": 12},
+          {"from": "22:07", "to": "22:25", "headwayMin": 18},
+          {"from": "22:25", "to": "23:05", "headwayMin": 20},
+          {"from": "23:05", "to": "23:55", "headwayMin": 25}
+        ],
+        "Bommasandra": [
+          {"from": "06:00", "to": "06:40", "headwayMin": 20},
+          {"from": "06:40", "to": "06:55", "headwayMin": 15},
+          {"from": "06:55", "to": "19:55", "headwayMin": 10},
+          {"from": "19:55", "to": "22:31", "headwayMin": 12},
+          {"from": "22:31", "to": "22:42", "headwayMin": 11}
+        ],
+        "totalRoundTrips": "97+01"
+      },
+      "sunday": {
+        "RV Road": [
+          {"from": "07:00", "to": "08:48", "headwayMin": 18},
+          {"from": "08:48", "to": "09:58", "headwayMin": 14},
+          {"from": "09:58", "to": "10:46", "headwayMin": 12},
+          {"from": "10:46", "to": "20:56", "headwayMin": 10},
+          {"from": "20:56", "to": "22:20", "headwayMin": 12},
+          {"from": "22:20", "to": "22:50", "headwayMin": 15},
+          {"from": "22:50", "to": "23:30", "headwayMin": 20},
+          {"from": "23:30", "to": "23:55", "headwayMin": 25}
+        ],
+        "Bommasandra": [
+          {"from": "07:00", "to": "08:12", "headwayMin": 18},
+          {"from": "08:12", "to": "09:08", "headwayMin": 14},
+          {"from": "09:08", "to": "10:20", "headwayMin": 12},
+          {"from": "10:20", "to": "20:20", "headwayMin": 10},
+          {"from": "20:20", "to": "22:32", "headwayMin": 12},
+          {"from": "22:32", "to": "22:42", "headwayMin": 10}
+        ],
+        "totalRoundTrips": "88.5+02"
+      }
+    }
+  }
+}
