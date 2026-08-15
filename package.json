@@ -1,0 +1,13 @@
+{
+  "name": "namma-metro-tracker",
+  "version": "1.0.0",
+  "description": "Namma Metro Live Dynamic Train Position and Departure Board System",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "test": "node validate_all_lines.js"
+  },
+  "keywords": ["metro", "namma-metro", "bmrcl", "leaflet", "bangalore"],
+  "author": "",
+  "license": "ISC"
+}
