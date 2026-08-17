@@ -385,58 +385,1070 @@
 // 1. OFFICIAL BMRCL TIMETABLES & SHORT LOOPS
 // ==========================================
 const SCHEDULE_DATA = {
-  purple: {
-    termini: ["Whitefield", "Challaghatta"],
-    schedule: {
-      monday: { "Whitefield": [{"from": "04:15", "to": "04:35", "frequencyMin": 20}, {"from": "04:35", "to": "05:00", "frequencyMin": 13}, {"from": "05:00", "to": "10:57", "frequencyMin": 10}, {"from": "10:57", "to": "15:21", "frequencyMin": 8}, {"from": "15:21", "to": "22:01", "frequencyMin": 10}, {"from": "22:01", "to": "22:45", "frequencyMin": 15}], "Challaghatta": [{"from": "04:15", "to": "04:35", "frequencyMin": 20}, {"from": "04:35", "to": "05:15", "frequencyMin": 15}, {"from": "05:15", "to": "06:54", "frequencyMin": 11}, {"from": "06:54", "to": "12:20", "frequencyMin": 10}, {"from": "12:20", "to": "16:45", "frequencyMin": 8}, {"from": "16:45", "to": "23:05", "frequencyMin": 10}] },
-      tuesday_friday: { "Whitefield": [{"from": "05:00", "to": "05:20", "frequencyMin": 20}, {"from": "05:20", "to": "10:57", "frequencyMin": 10}, {"from": "10:57", "to": "15:21", "frequencyMin": 8}, {"from": "15:21", "to": "22:01", "frequencyMin": 10}, {"from": "22:01", "to": "22:45", "frequencyMin": 15}], "Challaghatta": [{"from": "05:00", "to": "05:20", "frequencyMin": 20}, {"from": "05:20", "to": "06:00", "frequencyMin": 15}, {"from": "06:00", "to": "06:54", "frequencyMin": 11}, {"from": "06:54", "to": "12:20", "frequencyMin": 10}, {"from": "12:20", "to": "16:02", "frequencyMin": 8}, {"from": "16:02", "to": "23:05", "frequencyMin": 10}] },
-      saturday: { "Whitefield": [{"from": "05:00", "to": "05:20", "frequencyMin": 20}, {"from": "05:20", "to": "10:57", "frequencyMin": 10}, {"from": "10:57", "to": "15:21", "frequencyMin": 8}, {"from": "15:21", "to": "22:01", "frequencyMin": 10}, {"from": "22:01", "to": "22:45", "frequencyMin": 15}], "Challaghatta": [{"from": "05:00", "to": "05:20", "frequencyMin": 20}, {"from": "05:20", "to": "06:00", "frequencyMin": 15}, {"from": "06:00", "to": "06:54", "frequencyMin": 11}, {"from": "06:54", "to": "12:20", "frequencyMin": 10}, {"from": "12:20", "to": "16:45", "frequencyMin": 8}, {"from": "16:45", "to": "23:05", "frequencyMin": 10}] },
-      sunday: { "Whitefield": [{"from": "07:00", "to": "10:33", "frequencyMin": 10}, {"from": "10:33", "to": "20:01", "frequencyMin": 8}, {"from": "20:01", "to": "22:31", "frequencyMin": 10}, {"from": "22:31", "to": "22:45", "frequencyMin": 14}], "Challaghatta": [{"from": "07:00", "to": "07:50", "frequencyMin": 15}, {"from": "07:50", "to": "12:00", "frequencyMin": 10}, {"from": "12:00", "to": "21:28", "frequencyMin": 8}, {"from": "21:28", "to": "23:05", "frequencyMin": 10}] }
+  "purple": {
+    "termini": [
+      "Whitefield",
+      "Challaghatta"
+    ],
+    "schedule": {
+      "monday": {
+        "Whitefield": [
+          {
+            "from": "04:15",
+            "to": "04:35",
+            "frequencyMin": 20
+          },
+          {
+            "from": "04:35",
+            "to": "05:00",
+            "frequencyMin": 13
+          },
+          {
+            "from": "05:00",
+            "to": "10:57",
+            "frequencyMin": 10
+          },
+          {
+            "from": "10:57",
+            "to": "15:21",
+            "frequencyMin": 8
+          },
+          {
+            "from": "15:21",
+            "to": "22:01",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:01",
+            "to": "22:45",
+            "frequencyMin": 15
+          }
+        ],
+        "Challaghatta": [
+          {
+            "from": "04:15",
+            "to": "04:35",
+            "frequencyMin": 20
+          },
+          {
+            "from": "04:35",
+            "to": "05:15",
+            "frequencyMin": 15
+          },
+          {
+            "from": "05:15",
+            "to": "06:54",
+            "frequencyMin": 11
+          },
+          {
+            "from": "06:54",
+            "to": "12:20",
+            "frequencyMin": 10
+          },
+          {
+            "from": "12:20",
+            "to": "16:45",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:45",
+            "to": "23:05",
+            "frequencyMin": 10
+          }
+        ]
+      },
+      "tuesday_friday": {
+        "Whitefield": [
+          {
+            "from": "05:00",
+            "to": "05:20",
+            "frequencyMin": 20
+          },
+          {
+            "from": "05:20",
+            "to": "10:57",
+            "frequencyMin": 10
+          },
+          {
+            "from": "10:57",
+            "to": "15:21",
+            "frequencyMin": 8
+          },
+          {
+            "from": "15:21",
+            "to": "22:01",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:01",
+            "to": "22:45",
+            "frequencyMin": 15
+          }
+        ],
+        "Challaghatta": [
+          {
+            "from": "05:00",
+            "to": "05:20",
+            "frequencyMin": 20
+          },
+          {
+            "from": "05:20",
+            "to": "06:00",
+            "frequencyMin": 15
+          },
+          {
+            "from": "06:00",
+            "to": "06:54",
+            "frequencyMin": 11
+          },
+          {
+            "from": "06:54",
+            "to": "12:20",
+            "frequencyMin": 10
+          },
+          {
+            "from": "12:20",
+            "to": "16:02",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:02",
+            "to": "23:05",
+            "frequencyMin": 10
+          }
+        ]
+      },
+      "saturday": {
+        "Whitefield": [
+          {
+            "from": "05:00",
+            "to": "05:20",
+            "frequencyMin": 20
+          },
+          {
+            "from": "05:20",
+            "to": "10:57",
+            "frequencyMin": 10
+          },
+          {
+            "from": "10:57",
+            "to": "15:21",
+            "frequencyMin": 8
+          },
+          {
+            "from": "15:21",
+            "to": "22:01",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:01",
+            "to": "22:45",
+            "frequencyMin": 15
+          }
+        ],
+        "Challaghatta": [
+          {
+            "from": "05:00",
+            "to": "05:20",
+            "frequencyMin": 20
+          },
+          {
+            "from": "05:20",
+            "to": "06:00",
+            "frequencyMin": 15
+          },
+          {
+            "from": "06:00",
+            "to": "06:54",
+            "frequencyMin": 11
+          },
+          {
+            "from": "06:54",
+            "to": "12:20",
+            "frequencyMin": 10
+          },
+          {
+            "from": "12:20",
+            "to": "16:45",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:45",
+            "to": "23:05",
+            "frequencyMin": 10
+          }
+        ]
+      },
+      "sunday": {
+        "Whitefield": [
+          {
+            "from": "07:00",
+            "to": "10:33",
+            "frequencyMin": 10
+          },
+          {
+            "from": "10:33",
+            "to": "20:01",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:01",
+            "to": "22:31",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:31",
+            "to": "22:45",
+            "frequencyMin": 14
+          }
+        ],
+        "Challaghatta": [
+          {
+            "from": "07:00",
+            "to": "07:50",
+            "frequencyMin": 15
+          },
+          {
+            "from": "07:50",
+            "to": "12:00",
+            "frequencyMin": 10
+          },
+          {
+            "from": "12:00",
+            "to": "21:28",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:28",
+            "to": "23:05",
+            "frequencyMin": 10
+          }
+        ]
+      }
     }
   },
-  green: {
-    termini: ["Madavara", "Silk Institute"],
-    schedule: {
-      monday: { "Madavara": [{"from": "04:15", "to": "04:40", "frequencyMin": 25}, {"from": "05:00", "to": "06:15", "frequencyMin": 15}, {"from": "06:15", "to": "10:25", "frequencyMin": 10}, {"from": "10:25", "to": "10:39", "frequencyMin": 7}, {"from": "10:39", "to": "15:51", "frequencyMin": 8}, {"from": "15:51", "to": "19:44", "frequencyMin": 10}, {"from": "19:44", "to": "20:24", "frequencyMin": 8}, {"from": "20:24", "to": "22:04", "frequencyMin": 10}, {"from": "22:04", "to": "22:40", "frequencyMin": 10}, {"from": "22:40", "to": "22:57", "frequencyMin": 15}], "Silk Institute": [{"from": "04:15", "to": "05:00", "frequencyMin": 20}, {"from": "05:00", "to": "07:00", "frequencyMin": 15}, {"from": "07:00", "to": "11:09", "frequencyMin": 10}, {"from": "11:09", "to": "16:48", "frequencyMin": 8}, {"from": "16:48", "to": "20:29", "frequencyMin": 10}, {"from": "20:29", "to": "21:30", "frequencyMin": 8}, {"from": "21:30", "to": "22:40", "frequencyMin": 10}, {"from": "22:40", "to": "23:05", "frequencyMin": 12.5}] },
-      tuesday_friday: { "Madavara": [{"from": "05:00", "to": "06:15", "frequencyMin": 15}, {"from": "06:15", "to": "10:25", "frequencyMin": 11}, {"from": "10:25", "to": "10:39", "frequencyMin": 7}, {"from": "10:39", "to": "15:51", "frequencyMin": 8}, {"from": "15:51", "to": "19:44", "frequencyMin": 10}, {"from": "19:44", "to": "20:24", "frequencyMin": 8}, {"from": "20:24", "to": "22:04", "frequencyMin": 10}, {"from": "22:04", "to": "22:40", "frequencyMin": 15}], "Silk Institute": [{"from": "05:00", "to": "07:00", "frequencyMin": 15}, {"from": "07:00", "to": "11:09", "frequencyMin": 10}, {"from": "11:09", "to": "16:48", "frequencyMin": 8}, {"from": "16:48", "to": "20:29", "frequencyMin": 10}, {"from": "20:29", "to": "21:30", "frequencyMin": 8}, {"from": "21:30", "to": "22:40", "frequencyMin": 10}, {"from": "22:40", "to": "23:05", "frequencyMin": 12.5}] },
-      saturday: { "Madavara": [{"from": "05:00", "to": "06:15", "frequencyMin": 15}, {"from": "06:15", "to": "10:39", "frequencyMin": 11}, {"from": "10:39", "to": "16:01", "frequencyMin": 8}, {"from": "16:01", "to": "16:23", "frequencyMin": 5.5}, {"from": "16:23", "to": "19:52", "frequencyMin": 11}, {"from": "19:52", "to": "20:18", "frequencyMin": 8}, {"from": "20:18", "to": "22:08", "frequencyMin": 10, "offsetSec": -330}, {"from": "22:08", "to": "23:00", "frequencyMin": 15}], "Silk Institute": [{"from": "05:00", "to": "07:00", "frequencyMin": 15}, {"from": "07:00", "to": "11:53", "frequencyMin": 11}, {"from": "11:53", "to": "16:48", "frequencyMin": 8}, {"from": "16:48", "to": "20:30", "frequencyMin": 11, "offsetSec": -300}, {"from": "20:30", "to": "20:41", "frequencyMin": 11, "offsetSec": -60}, {"from": "20:41", "to": "21:31", "frequencyMin": 10, "offsetSec": -60}, {"from": "21:31", "to": "22:41", "frequencyMin": 10}, {"from": "22:41", "to": "23:05", "frequencyMin": 12.5}] },
-      sunday: { "Madavara": [{"from": "07:00", "to": "10:47", "frequencyMin": 10}, {"from": "10:47", "to": "20:15", "frequencyMin": 8}, {"from": "20:15", "to": "22:05", "frequencyMin": 10}, {"from": "22:05", "to": "22:29", "frequencyMin": 12}, {"from": "22:29", "to": "23:00", "frequencyMin": 15}], "Silk Institute": [{"from": "07:00", "to": "07:58", "frequencyMin": 15}, {"from": "07:58", "to": "12:08", "frequencyMin": 10}, {"from": "12:08", "to": "21:44", "frequencyMin": 8}, {"from": "21:44", "to": "22:44", "frequencyMin": 10}, {"from": "22:44", "to": "23:05", "frequencyMin": 12}] }
+  "green": {
+    "termini": [
+      "Madavara",
+      "Silk Institute"
+    ],
+    "schedule": {
+      "monday": {
+        "Madavara": [
+          {
+            "from": "04:15",
+            "to": "04:40",
+            "frequencyMin": 25
+          },
+          {
+            "from": "05:00",
+            "to": "06:15",
+            "frequencyMin": 15
+          },
+          {
+            "from": "06:15",
+            "to": "10:25",
+            "frequencyMin": 10
+          },
+          {
+            "from": "10:25",
+            "to": "10:39",
+            "frequencyMin": 7
+          },
+          {
+            "from": "10:39",
+            "to": "15:51",
+            "frequencyMin": 8
+          },
+          {
+            "from": "15:51",
+            "to": "19:44",
+            "frequencyMin": 10
+          },
+          {
+            "from": "19:44",
+            "to": "20:24",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:24",
+            "to": "22:04",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:04",
+            "to": "22:40",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:40",
+            "to": "22:57",
+            "frequencyMin": 15
+          }
+        ],
+        "Silk Institute": [
+          {
+            "from": "04:15",
+            "to": "05:00",
+            "frequencyMin": 20
+          },
+          {
+            "from": "05:00",
+            "to": "07:00",
+            "frequencyMin": 15
+          },
+          {
+            "from": "07:00",
+            "to": "11:09",
+            "frequencyMin": 10
+          },
+          {
+            "from": "11:09",
+            "to": "16:48",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:48",
+            "to": "20:29",
+            "frequencyMin": 10
+          },
+          {
+            "from": "20:29",
+            "to": "21:30",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:30",
+            "to": "22:40",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:40",
+            "to": "23:05",
+            "frequencyMin": 12.5
+          }
+        ]
+      },
+      "tuesday_friday": {
+        "Madavara": [
+          {
+            "from": "05:00",
+            "to": "06:15",
+            "frequencyMin": 15
+          },
+          {
+            "from": "06:15",
+            "to": "10:25",
+            "frequencyMin": 11
+          },
+          {
+            "from": "10:25",
+            "to": "10:39",
+            "frequencyMin": 7
+          },
+          {
+            "from": "10:39",
+            "to": "15:51",
+            "frequencyMin": 8
+          },
+          {
+            "from": "15:51",
+            "to": "19:44",
+            "frequencyMin": 10
+          },
+          {
+            "from": "19:44",
+            "to": "20:24",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:24",
+            "to": "22:04",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:04",
+            "to": "22:40",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:40",
+            "to": "22:57",
+            "frequencyMin": 15
+          }
+        ],
+        "Silk Institute": [
+          {
+            "from": "05:00",
+            "to": "07:00",
+            "frequencyMin": 15
+          },
+          {
+            "from": "07:00",
+            "to": "11:09",
+            "frequencyMin": 10
+          },
+          {
+            "from": "11:09",
+            "to": "16:48",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:48",
+            "to": "20:29",
+            "frequencyMin": 10
+          },
+          {
+            "from": "20:29",
+            "to": "21:30",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:30",
+            "to": "22:40",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:40",
+            "to": "23:05",
+            "frequencyMin": 12.5
+          }
+        ]
+      },
+      "saturday": {
+        "Madavara": [
+          {
+            "from": "05:00",
+            "to": "06:15",
+            "frequencyMin": 15
+          },
+          {
+            "from": "06:15",
+            "to": "10:39",
+            "frequencyMin": 11
+          },
+          {
+            "from": "10:39",
+            "to": "16:01",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:01",
+            "to": "16:23",
+            "frequencyMin": 5.5
+          },
+          {
+            "from": "16:23",
+            "to": "19:52",
+            "frequencyMin": 11
+          },
+          {
+            "from": "19:52",
+            "to": "20:24",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:24",
+            "to": "22:04",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:04",
+            "to": "23:00",
+            "frequencyMin": 15
+          }
+        ],
+        "Silk Institute": [
+          {
+            "from": "05:00",
+            "to": "07:00",
+            "frequencyMin": 15
+          },
+          {
+            "from": "07:00",
+            "to": "11:53",
+            "frequencyMin": 11
+          },
+          {
+            "from": "11:53",
+            "to": "16:48",
+            "frequencyMin": 8
+          },
+          {
+            "from": "16:48",
+            "to": "20:57",
+            "frequencyMin": 11
+          },
+          {
+            "from": "20:57",
+            "to": "21:30",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:30",
+            "to": "22:40",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:40",
+            "to": "23:05",
+            "frequencyMin": 12.5
+          }
+        ]
+      },
+      "sunday": {
+        "Madavara": [
+          {
+            "from": "07:00",
+            "to": "10:47",
+            "frequencyMin": 10
+          },
+          {
+            "from": "10:47",
+            "to": "20:15",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:15",
+            "to": "22:05",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:05",
+            "to": "22:29",
+            "frequencyMin": 12
+          },
+          {
+            "from": "22:29",
+            "to": "23:00",
+            "frequencyMin": 15
+          }
+        ],
+        "Silk Institute": [
+          {
+            "from": "07:00",
+            "to": "07:58",
+            "frequencyMin": 15
+          },
+          {
+            "from": "07:58",
+            "to": "12:08",
+            "frequencyMin": 10
+          },
+          {
+            "from": "12:08",
+            "to": "21:44",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:44",
+            "to": "22:44",
+            "frequencyMin": 10
+          },
+          {
+            "from": "22:44",
+            "to": "23:05",
+            "frequencyMin": 12
+          }
+        ]
+      }
     }
   },
-  yellow: {
-    termini: ["RV Road", "Bommasandra"],
-    schedule: {
-      monday: { "RV Road": [{"from": "05:05", "to": "05:35", "frequencyMin": 30}, {"from": "05:35", "to": "06:00", "frequencyMin": 25}, {"from": "06:00", "to": "06:40", "frequencyMin": 20}, {"from": "06:40", "to": "06:56", "frequencyMin": 16}, {"from": "06:56", "to": "07:07", "frequencyMin": 11}, {"from": "07:07", "to": "08:27", "frequencyMin": 10}, {"from": "08:27", "to": "09:23", "frequencyMin": 8}, {"from": "09:23", "to": "10:33", "frequencyMin": 7}, {"from": "10:33", "to": "11:05", "frequencyMin": 8}, {"from": "11:05", "to": "16:45", "frequencyMin": 10}, {"from": "16:45", "to": "18:58", "frequencyMin": 7}, {"from": "18:58", "to": "20:34", "frequencyMin": 8}, {"from": "20:34", "to": "21:34", "frequencyMin": 10}, {"from": "21:34", "to": "21:45", "frequencyMin": 11}, {"from": "21:45", "to": "22:20", "frequencyMin": 12}, {"from": "22:20", "to": "22:40", "frequencyMin": 20}, {"from": "22:40", "to": "23:55", "frequencyMin": 25}], "Bommasandra": [{"from": "05:05", "to": "05:35", "frequencyMin": 30}, {"from": "05:35", "to": "06:00", "frequencyMin": 20}, {"from": "06:00", "to": "06:20", "frequencyMin": 20}, {"from": "06:20", "to": "07:50", "frequencyMin": 10}, {"from": "07:50", "to": "08:46", "frequencyMin": 8}, {"from": "08:46", "to": "09:49", "frequencyMin": 7}, {"from": "09:49", "to": "10:29", "frequencyMin": 8}, {"from": "10:29", "to": "16:09", "frequencyMin": 10}, {"from": "16:09", "to": "18:29", "frequencyMin": 7}, {"from": "18:29", "to": "19:57", "frequencyMin": 8}, {"from": "19:57", "to": "20:57", "frequencyMin": 10}, {"from": "20:57", "to": "22:33", "frequencyMin": 12}, {"from": "22:33", "to": "22:42", "frequencyMin": 9}] },
-      tuesday_friday: { "RV Road": [{"from": "06:00", "to": "06:40", "frequencyMin": 20}, {"from": "06:40", "to": "06:56", "frequencyMin": 16}, {"from": "06:56", "to": "07:07", "frequencyMin": 11}, {"from": "07:07", "to": "08:27", "frequencyMin": 10}, {"from": "08:27", "to": "09:23", "frequencyMin": 8}, {"from": "09:23", "to": "10:33", "frequencyMin": 7}, {"from": "10:33", "to": "11:05", "frequencyMin": 8}, {"from": "11:05", "to": "16:45", "frequencyMin": 10}, {"from": "16:45", "to": "18:58", "frequencyMin": 7}, {"from": "18:58", "to": "20:34", "frequencyMin": 8}, {"from": "20:34", "to": "21:34", "frequencyMin": 10}, {"from": "21:34", "to": "21:45", "frequencyMin": 11}, {"from": "21:45", "to": "22:20", "frequencyMin": 12}, {"from": "22:20", "to": "22:40", "frequencyMin": 20}, {"from": "22:40", "to": "23:55", "frequencyMin": 25}], "Bommasandra": [{"from": "06:00", "to": "06:20", "frequencyMin": 20}, {"from": "06:20", "to": "07:50", "frequencyMin": 10}, {"from": "07:50", "to": "08:46", "frequencyMin": 8}, {"from": "08:46", "to": "09:49", "frequencyMin": 7}, {"from": "09:49", "to": "10:29", "frequencyMin": 8}, {"from": "10:29", "to": "16:09", "frequencyMin": 10}, {"from": "16:09", "to": "18:29", "frequencyMin": 7}, {"from": "18:29", "to": "19:57", "frequencyMin": 8}, {"from": "19:57", "to": "20:57", "frequencyMin": 10}, {"from": "20:57", "to": "22:33", "frequencyMin": 12}, {"from": "22:33", "to": "22:42", "frequencyMin": 9}] },
-      saturday: { "RV Road": [{"from": "06:00", "to": "06:25", "frequencyMin": 20}, {"from": "06:25", "to": "07:05", "frequencyMin": 20}, {"from": "07:05", "to": "07:20", "frequencyMin": 15}, {"from": "07:20", "to": "07:31", "frequencyMin": 11}, {"from": "07:31", "to": "20:31", "frequencyMin": 10}, {"from": "20:31", "to": "22:07", "frequencyMin": 12}, {"from": "22:07", "to": "22:25", "frequencyMin": 18}, {"from": "22:25", "to": "23:05", "frequencyMin": 20}, {"from": "23:05", "to": "23:55", "frequencyMin": 25}], "Bommasandra": [{"from": "06:00", "to": "06:40", "frequencyMin": 20}, {"from": "06:40", "to": "06:55", "frequencyMin": 15}, {"from": "06:55", "to": "19:55", "frequencyMin": 10}, {"from": "19:55", "to": "22:31", "frequencyMin": 12}, {"from": "22:31", "to": "22:42", "frequencyMin": 11}] },
-      sunday: { "RV Road": [{"from": "07:00", "to": "08:48", "frequencyMin": 18}, {"from": "08:48", "to": "09:58", "frequencyMin": 14}, {"from": "09:58", "to": "10:46", "frequencyMin": 12}, {"from": "10:46", "to": "20:56", "frequencyMin": 10}, {"from": "20:56", "to": "22:20", "frequencyMin": 12}, {"from": "22:20", "to": "22:50", "frequencyMin": 15}, {"from": "22:50", "to": "23:30", "frequencyMin": 20}, {"from": "23:30", "to": "23:55", "frequencyMin": 25}], "Bommasandra": [{"from": "07:00", "to": "08:12", "frequencyMin": 18}, {"from": "08:12", "to": "09:08", "frequencyMin": 14}, {"from": "09:08", "to": "10:20", "frequencyMin": 12}, {"from": "10:20", "to": "20:20", "frequencyMin": 10}, {"from": "20:20", "to": "22:32", "frequencyMin": 12}, {"from": "22:32", "to": "22:42", "frequencyMin": 10}] }
+  "yellow": {
+    "termini": [
+      "RV Road",
+      "Bommasandra"
+    ],
+    "schedule": {
+      "monday": {
+        "RV Road": [
+          {
+            "from": "05:05",
+            "to": "05:35",
+            "frequencyMin": 30
+          },
+          {
+            "from": "05:35",
+            "to": "06:00",
+            "frequencyMin": 25
+          },
+          {
+            "from": "06:00",
+            "to": "06:40",
+            "frequencyMin": 20
+          },
+          {
+            "from": "06:40",
+            "to": "06:56",
+            "frequencyMin": 16
+          },
+          {
+            "from": "06:56",
+            "to": "07:07",
+            "frequencyMin": 11
+          },
+          {
+            "from": "07:07",
+            "to": "08:27",
+            "frequencyMin": 10
+          },
+          {
+            "from": "08:27",
+            "to": "09:15",
+            "frequencyMin": 8
+          },
+          {
+            "from": "09:15",
+            "to": "09:29",
+            "frequencyMin": 7
+          },
+          {
+            "from": "09:29",
+            "to": "10:47",
+            "frequencyMin": 6
+          },
+          {
+            "from": "10:47",
+            "to": "10:55",
+            "frequencyMin": 8
+          },
+          {
+            "from": "10:55",
+            "to": "11:04",
+            "frequencyMin": 9
+          },
+          {
+            "from": "11:04",
+            "to": "16:34",
+            "frequencyMin": 10
+          },
+          {
+            "from": "16:34",
+            "to": "16:41",
+            "frequencyMin": 7
+          },
+          {
+            "from": "16:41",
+            "to": "20:11",
+            "frequencyMin": 6
+          },
+          {
+            "from": "20:11",
+            "to": "21:07",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:07",
+            "to": "21:57",
+            "frequencyMin": 10
+          },
+          {
+            "from": "21:57",
+            "to": "22:10",
+            "frequencyMin": 13
+          },
+          {
+            "from": "22:10",
+            "to": "22:40",
+            "frequencyMin": 15
+          },
+          {
+            "from": "22:40",
+            "to": "23:55",
+            "frequencyMin": 25
+          }
+        ],
+        "Bommasandra": [
+          {
+            "from": "05:05",
+            "to": "05:35",
+            "frequencyMin": 30
+          },
+          {
+            "from": "05:35",
+            "to": "06:00",
+            "frequencyMin": 20
+          },
+          {
+            "from": "06:00",
+            "to": "06:20",
+            "frequencyMin": 20
+          },
+          {
+            "from": "06:20",
+            "to": "07:50",
+            "frequencyMin": 10
+          },
+          {
+            "from": "07:50",
+            "to": "08:38",
+            "frequencyMin": 8
+          },
+          {
+            "from": "08:38",
+            "to": "08:52",
+            "frequencyMin": 7
+          },
+          {
+            "from": "08:52",
+            "to": "10:10",
+            "frequencyMin": 6
+          },
+          {
+            "from": "10:10",
+            "to": "10:18",
+            "frequencyMin": 8
+          },
+          {
+            "from": "10:18",
+            "to": "15:58",
+            "frequencyMin": 10
+          },
+          {
+            "from": "15:58",
+            "to": "19:34",
+            "frequencyMin": 6
+          },
+          {
+            "from": "19:34",
+            "to": "20:30",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:30",
+            "to": "21:30",
+            "frequencyMin": 10
+          },
+          {
+            "from": "21:30",
+            "to": "22:42",
+            "frequencyMin": 12
+          }
+        ]
+      },
+      "tuesday_friday": {
+        "RV Road": [
+          {
+            "from": "06:00",
+            "to": "06:40",
+            "frequencyMin": 20
+          },
+          {
+            "from": "06:40",
+            "to": "06:56",
+            "frequencyMin": 16
+          },
+          {
+            "from": "06:56",
+            "to": "07:07",
+            "frequencyMin": 11
+          },
+          {
+            "from": "07:07",
+            "to": "08:27",
+            "frequencyMin": 10
+          },
+          {
+            "from": "08:27",
+            "to": "09:15",
+            "frequencyMin": 8
+          },
+          {
+            "from": "09:15",
+            "to": "09:29",
+            "frequencyMin": 7
+          },
+          {
+            "from": "09:29",
+            "to": "10:47",
+            "frequencyMin": 6
+          },
+          {
+            "from": "10:47",
+            "to": "10:55",
+            "frequencyMin": 8
+          },
+          {
+            "from": "10:55",
+            "to": "11:04",
+            "frequencyMin": 9
+          },
+          {
+            "from": "11:04",
+            "to": "16:34",
+            "frequencyMin": 10
+          },
+          {
+            "from": "16:34",
+            "to": "16:41",
+            "frequencyMin": 7
+          },
+          {
+            "from": "16:41",
+            "to": "20:11",
+            "frequencyMin": 6
+          },
+          {
+            "from": "20:11",
+            "to": "21:07",
+            "frequencyMin": 8
+          },
+          {
+            "from": "21:07",
+            "to": "21:57",
+            "frequencyMin": 10
+          },
+          {
+            "from": "21:57",
+            "to": "22:10",
+            "frequencyMin": 13
+          },
+          {
+            "from": "22:10",
+            "to": "22:40",
+            "frequencyMin": 15
+          },
+          {
+            "from": "22:40",
+            "to": "23:55",
+            "frequencyMin": 25
+          }
+        ],
+        "Bommasandra": [
+          {
+            "from": "06:00",
+            "to": "06:20",
+            "frequencyMin": 20
+          },
+          {
+            "from": "06:20",
+            "to": "07:50",
+            "frequencyMin": 10
+          },
+          {
+            "from": "07:50",
+            "to": "08:38",
+            "frequencyMin": 8
+          },
+          {
+            "from": "08:38",
+            "to": "08:52",
+            "frequencyMin": 7
+          },
+          {
+            "from": "08:52",
+            "to": "10:10",
+            "frequencyMin": 6
+          },
+          {
+            "from": "10:10",
+            "to": "10:18",
+            "frequencyMin": 8
+          },
+          {
+            "from": "10:18",
+            "to": "15:58",
+            "frequencyMin": 10
+          },
+          {
+            "from": "15:58",
+            "to": "19:34",
+            "frequencyMin": 6
+          },
+          {
+            "from": "19:34",
+            "to": "20:30",
+            "frequencyMin": 8
+          },
+          {
+            "from": "20:30",
+            "to": "21:30",
+            "frequencyMin": 10
+          },
+          {
+            "from": "21:30",
+            "to": "22:42",
+            "frequencyMin": 12
+          }
+        ]
+      },
+      "saturday": {
+        "RV Road": [
+          {
+            "from": "06:00",
+            "to": "07:05",
+            "frequencyMin": 20
+          },
+          {
+            "from": "07:05",
+            "to": "07:20",
+            "frequencyMin": 15
+          },
+          {
+            "from": "07:20",
+            "to": "07:31",
+            "frequencyMin": 11
+          },
+          {
+            "from": "07:31",
+            "to": "20:31",
+            "frequencyMin": 10
+          },
+          {
+            "from": "20:31",
+            "to": "22:07",
+            "frequencyMin": 12
+          },
+          {
+            "from": "22:07",
+            "to": "22:25",
+            "frequencyMin": 18
+          },
+          {
+            "from": "22:25",
+            "to": "23:05",
+            "frequencyMin": 20
+          },
+          {
+            "from": "23:05",
+            "to": "23:55",
+            "frequencyMin": 25
+          }
+        ],
+        "Bommasandra": [
+          {
+            "from": "06:00",
+            "to": "06:40",
+            "frequencyMin": 20
+          },
+          {
+            "from": "06:40",
+            "to": "06:55",
+            "frequencyMin": 15
+          },
+          {
+            "from": "06:55",
+            "to": "19:55",
+            "frequencyMin": 10
+          },
+          {
+            "from": "19:55",
+            "to": "22:31",
+            "frequencyMin": 12
+          },
+          {
+            "from": "22:31",
+            "to": "22:42",
+            "frequencyMin": 11
+          }
+        ]
+      },
+      "sunday": {
+        "RV Road": [
+          {
+            "from": "07:00",
+            "to": "08:48",
+            "frequencyMin": 18
+          },
+          {
+            "from": "08:48",
+            "to": "09:58",
+            "frequencyMin": 14
+          },
+          {
+            "from": "09:58",
+            "to": "10:46",
+            "frequencyMin": 12
+          },
+          {
+            "from": "10:46",
+            "to": "20:56",
+            "frequencyMin": 10
+          },
+          {
+            "from": "20:56",
+            "to": "22:20",
+            "frequencyMin": 12
+          },
+          {
+            "from": "22:20",
+            "to": "22:50",
+            "frequencyMin": 15
+          },
+          {
+            "from": "22:50",
+            "to": "23:30",
+            "frequencyMin": 20
+          },
+          {
+            "from": "23:30",
+            "to": "23:55",
+            "frequencyMin": 25
+          }
+        ],
+        "Bommasandra": [
+          {
+            "from": "07:00",
+            "to": "08:12",
+            "frequencyMin": 18
+          },
+          {
+            "from": "08:12",
+            "to": "09:08",
+            "frequencyMin": 14
+          },
+          {
+            "from": "09:08",
+            "to": "10:20",
+            "frequencyMin": 12
+          },
+          {
+            "from": "10:20",
+            "to": "20:20",
+            "frequencyMin": 10
+          },
+          {
+            "from": "20:20",
+            "to": "22:32",
+            "frequencyMin": 12
+          },
+          {
+            "from": "22:32",
+            "to": "22:42",
+            "frequencyMin": 10
+          }
+        ]
+      }
     }
   }
 };
 
-// Phased, interleaved short loops:
-// Morning Peak: Garudachar Palya <-> Mysuru Road
-// Evening Peak: Pattandur Agrahara <-> Mysuru Road
 const SHORT_LOOPS_CONFIG = {
   purple: {
     weekday: {
       loops: [
         // Morning Peak: Garudachar Palya <-> Mysuru Road
-        { origin: "Garudachar Palya", dest: "Mysuru Road", direction: 0, from: "06:53", to: "10:55", freqMin: 10, offsetSec: 210 },
-        { origin: "Mysuru Road", dest: "Garudachar Palya", direction: 1, from: "07:22", to: "10:20", freqMin: 10, offsetSec: 180 },
+        { origin: "Garudachar Palya", dest: "Mysuru Road", direction: 0, from: "06:53", to: "10:55", freqMin: 10, feeder: { origin: "Challaghatta", dest: "Garudachar Palya", direction: 1, cleaningMin: 4 } },
+        { origin: "Mysuru Road", dest: "Garudachar Palya", direction: 1, from: "07:22", to: "10:20", freqMin: 10, feeder: { origin: "Whitefield", dest: "Mysuru Road", direction: 0, cleaningMin: 4 } },
+        // Morning Peak: Majestic (Kempegowda) <-> Whitefield (IT Corridor Express)
+        { origin: "Majestic", dest: "Whitefield", direction: 1, from: "08:51", to: "11:41", freqMin: 10, feeder: { origin: "Challaghatta", dest: "Majestic", direction: 1, cleaningMin: 4 } },
+        { origin: "Whitefield", dest: "Majestic", direction: 0, from: "09:45", to: "12:35", freqMin: 10, feeder: { origin: "Whitefield", dest: "Whitefield", direction: 0, cleaningMin: 4 } },
         // Evening Peak: Pattandur Agrahara <-> Mysuru Road
-        { origin: "Pattandur Agrahara", dest: "Mysuru Road", direction: 0, from: "15:56", to: "20:10", freqMin: 10, offsetSec: 390 },
-        { origin: "Mysuru Road", dest: "Pattandur Agrahara", direction: 1, from: "16:53", to: "21:02", freqMin: 10, offsetSec: 180 }
+        { origin: "Pattandur Agrahara", dest: "Mysuru Road", direction: 0, from: "15:56", to: "20:10", freqMin: 10, feeder: { origin: "Challaghatta", dest: "Pattandur Agrahara", direction: 1, cleaningMin: 4 } },
+        { origin: "Mysuru Road", dest: "Pattandur Agrahara", direction: 1, from: "16:53", to: "21:02", freqMin: 10, feeder: { origin: "Whitefield", dest: "Mysuru Road", direction: 0, cleaningMin: 4 } }
       ]
     },
     saturday: {
       loops: [
         // Morning Peak: Garudachar Palya <-> Mysuru Road
-        { origin: "Garudachar Palya", dest: "Mysuru Road", direction: 0, from: "06:53", to: "10:55", freqMin: 10, offsetSec: 210 },
-        { origin: "Mysuru Road", dest: "Garudachar Palya", direction: 1, from: "07:22", to: "10:20", freqMin: 10, offsetSec: 180 },
+        { origin: "Garudachar Palya", dest: "Mysuru Road", direction: 0, from: "06:53", to: "10:55", freqMin: 10, feeder: { origin: "Challaghatta", dest: "Garudachar Palya", direction: 1, cleaningMin: 4 } },
+        { origin: "Mysuru Road", dest: "Garudachar Palya", direction: 1, from: "07:22", to: "10:20", freqMin: 10, feeder: { origin: "Whitefield", dest: "Mysuru Road", direction: 0, cleaningMin: 4 } },
+        // Morning Peak: Majestic (Kempegowda) <-> Whitefield
+        { origin: "Majestic", dest: "Whitefield", direction: 1, from: "08:51", to: "11:41", freqMin: 10, feeder: { origin: "Challaghatta", dest: "Majestic", direction: 1, cleaningMin: 4 } },
+        { origin: "Whitefield", dest: "Majestic", direction: 0, from: "09:45", to: "12:35", freqMin: 10, feeder: { origin: "Whitefield", dest: "Whitefield", direction: 0, cleaningMin: 4 } },
         // Evening Peak: Pattandur Agrahara <-> Mysuru Road
-        { origin: "Pattandur Agrahara", dest: "Mysuru Road", direction: 0, from: "17:56", to: "20:10", freqMin: 10, offsetSec: 390 },
-        { origin: "Mysuru Road", dest: "Pattandur Agrahara", direction: 1, from: "17:02", to: "21:02", freqMin: 10, offsetSec: 180 }
+        { origin: "Pattandur Agrahara", dest: "Mysuru Road", direction: 0, from: "17:56", to: "20:10", freqMin: 10, feeder: { origin: "Challaghatta", dest: "Pattandur Agrahara", direction: 1, cleaningMin: 4 } },
+        { origin: "Mysuru Road", dest: "Pattandur Agrahara", direction: 1, from: "17:02", to: "21:02", freqMin: 10, feeder: { origin: "Whitefield", dest: "Mysuru Road", direction: 0, cleaningMin: 4 } }
       ]
     },
     sunday: { loops: [] }
@@ -444,18 +1456,18 @@ const SHORT_LOOPS_CONFIG = {
   green: {
     weekday: {
       loops: [
-        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "06:37", to: "10:22", freqMin: 10, offsetSec: 0 },
-        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "16:36", to: "19:41", freqMin: 10, offsetSec: 0 },
-        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "07:20", to: "10:50", freqMin: 10, offsetSec: 270 },
-        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "16:58", to: "20:22", freqMin: 10, offsetSec: 270 }
+        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "06:37", to: "10:22", freqMin: 10, feeder: { origin: "Silk Institute", dest: "Peenya Industry", direction: 1, cleaningMin: 4 } },
+        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "16:36", to: "19:41", freqMin: 10, feeder: { origin: "Silk Institute", dest: "Peenya Industry", direction: 1, cleaningMin: 4 } },
+        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "07:20", to: "10:50", freqMin: 10, feeder: { origin: "Madavara", dest: "Yelachenahalli", direction: 0, cleaningMin: 4 } },
+        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "16:58", to: "20:22", freqMin: 10, feeder: { origin: "Madavara", dest: "Yelachenahalli", direction: 0, cleaningMin: 4 } }
       ]
     },
     saturday: {
       loops: [
-        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "06:38", to: "10:40", freqMin: 11, offsetSec: 0 },
-        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "16:13", to: "19:47", freqMin: 11, offsetSec: 0 },
-        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "07:21", to: "11:23", freqMin: 11, offsetSec: 300 },
-        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "16:58", to: "20:30", freqMin: 11, offsetSec: 100 }
+        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "06:38", to: "10:40", freqMin: 11, feeder: { origin: "Silk Institute", dest: "Peenya Industry", direction: 1, cleaningMin: 4 } },
+        { origin: "Peenya Industry", dest: "Yelachenahalli", direction: 0, from: "16:13", to: "19:47", freqMin: 11, feeder: { origin: "Silk Institute", dest: "Peenya Industry", direction: 1, cleaningMin: 4 } },
+        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "07:21", to: "11:23", freqMin: 11, feeder: { origin: "Madavara", dest: "Yelachenahalli", direction: 0, cleaningMin: 4 } },
+        { origin: "Yelachenahalli", dest: "Peenya Industry", direction: 1, from: "16:58", to: "20:30", freqMin: 11, feeder: { origin: "Madavara", dest: "Yelachenahalli", direction: 0, cleaningMin: 4 } }
       ]
     },
     sunday: { loops: [] }
@@ -562,11 +1574,43 @@ const GTFS_OFFSETS = {
 function normStation(name) {
   if (!name) return "";
   const s = name.trim();
-  if (s === "Whitefield (Kadugodi)") return "Whitefield";
-  if (s === "Kempegowda" || s === "Kempegowda Majestic" || s === "Kempegowda Station") return "Majestic";
-  if (s === "Mysore Road") return "Mysuru Road";
-  if (s === "Mahatma Gandhi Road" || s === "MG Road Metro") return "MG Road";
-  if (s === "Krishnarajapura" || s === "KR Puram") return "K.R. Pura";
+  if (s === "Whitefield (Kadugodi)" || s === "Whitefield Kadugodi") return "Whitefield";
+  if (s === "Hopefarm Channasandra") return "Channasandra";
+  if (s === "Kadugodi Tree Park") return "Kadugodi Tree Park";
+  if (s === "Pattandur Agrahara (ITPL)") return "Pattandur Agrahara";
+  if (s === "Sri Sathya Sai Hospital") return "Sri Sathya Sai Hospital";
+  if (s === "Nallurhalli") return "Nallurhalli";
+  if (s === "Kundalahalli") return "Kundalahalli";
+  if (s === "Seetharam Palya") return "Seetharam Palya";
+  if (s === "Hoodi") return "Hoodi";
+  if (s === "Garudacharpalya" || s === "Garudachar Palya") return "Garudachar Palya";
+  if (s === "Singayyanapalya" || s === "Saraswati Nagar") return "Saraswati Nagar";
+  if (s === "Krishnarajapura" || s === "KR Puram" || s === "K.R. Puram" || s === "K.R. Pura") return "K.R. Pura";
+  if (s === "Benniganahalli" || s === "Bennigana Halli") return "Benniganahalli";
+  if (s === "Baiyappanahalli" || s === "Baiyappana Halli") return "Baiyappanahalli";
+  if (s === "Swami Vivekananda Road" || s === "SV Road") return "Swami Vivekananda Road";
+  if (s === "Indiranagar" || s === "Indira Nagar") return "Indiranagar";
+  if (s === "Halasuru" || s === "Ulsoor") return "Halasuru";
+  if (s === "Trinity") return "Trinity";
+  if (s === "Mahatma Gandhi Road" || s === "MG Road Metro" || s === "M.G. Road") return "MG Road";
+  if (s === "Cubbon Park") return "Cubbon Park";
+  if (s === "Vidhana Soudha" || s === "Dr. B.R. Ambedkar Station Vidhana Soudha" || s === "Dr. B.R. Ambedkar Vidhana Soudha") return "Vidhana Soudha";
+  if (s === "Central College" || s === "Sir M. Visveshwaraya Station" || s === "Sir M. Visveshwaraya Central College" || s === "Sir M Visveshwaraya Central College") return "Central College";
+  if (s === "Kempegowda" || s === "Kempegowda Majestic" || s === "Kempegowda Station" || s === "Majestic" || s === "Nadaprabhu Kempegowda Station Majestic") return "Majestic";
+  if (s === "KSR Railway Station" || s === "Krantivira Sangolli Rayanna Railway Station" || s === "City Railway Station" || s === "KSR Bengaluru") return "KSR Railway Station";
+  if (s === "Magadi Road") return "Magadi Road";
+  if (s === "Hosahalli" || s === "Balagangadharanatha Swamiji Station, Hosahalli" || s === "Balagangadharanatha Swamiji Station") return "Hosahalli";
+  if (s === "Vijayanagar") return "Vijayanagar";
+  if (s === "Attiguppe") return "Attiguppe";
+  if (s === "Deepanjali Nagar") return "Deepanjali Nagar";
+  if (s === "Mysore Road" || s === "Mysuru Road") return "Mysuru Road";
+  if (s === "Nayandahalli" || s === "Pantharapalya - Nayandahalli" || s === "Pantharapalya") return "Nayandahalli";
+  if (s === "Rajarajeshwari Nagar" || s === "RR Nagar") return "Rajarajeshwari Nagar";
+  if (s === "Jnanabharathi" || s === "Jnana Bharathi") return "Jnanabharathi";
+  if (s === "Pattanagere") return "Pattanagere";
+  if (s === "Kengeri Bus Terminal") return "Kengeri Bus Terminal";
+  if (s === "Kengeri") return "Kengeri";
+  if (s === "Challaghatta") return "Challaghatta";
   if (s === "Mantri Square Sampige Road") return "Sampige Road";
   if (s === "Rashtreeya Vidyalaya Road") return "RV Road";
   if (s === "Jayadeva") return "Jayadeva Hospital";
@@ -599,23 +1643,20 @@ function getDistanceKM(lat1, lon1, lat2, lon2) {
     return 12742 * Math.asin(Math.sqrt(a)); 
 }
 
-function catmullRomSpline(p0, p1, p2, p3, t) {
-    const t2 = t * t, t3 = t2 * t;
-    return 0.5 * ( (2 * p1) + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t2 + (-p0 + 3 * p1 - 3 * p2 + p3) * t3 );
-}
-
-function generateCurvedTrack(anchors, segments = 10) {
-    const pts = anchors.map(s => ({x: s.lng, y: s.lat}));
-    pts.unshift(pts[0]); pts.push(pts[pts.length - 1]);
-    
+function generateCurvedTrack(anchors, subdivision = 3) {
     const track = [];
-    for (let i = 1; i < pts.length - 2; i++) {
-        track.push({ ...anchors[i-1], isAnchor: true });
-        for (let t = 1; t <= segments; t++) {
-            const percent = t / segments;
-            const lng = catmullRomSpline(pts[i-1].x, pts[i].x, pts[i+1].x, pts[i+2].x, percent);
-            const lat = catmullRomSpline(pts[i-1].y, pts[i].y, pts[i+1].y, pts[i+2].y, percent);
-            if (t < segments) track.push({ lat, lng, isStation: false, isAnchor: false });
+    for (let i = 0; i < anchors.length - 1; i++) {
+        const p1 = anchors[i];
+        const p2 = anchors[i + 1];
+        track.push({ ...p1, isAnchor: true });
+        for (let s = 1; s < subdivision; s++) {
+            const f = s / subdivision;
+            track.push({
+                lat: p1.lat + (p2.lat - p1.lat) * f,
+                lng: p1.lng + (p2.lng - p1.lng) * f,
+                isStation: false,
+                isAnchor: false
+            });
         }
     }
     track.push({ ...anchors[anchors.length - 1], isAnchor: true });
@@ -644,302 +1685,3310 @@ function generateCurvedTrack(anchors, segments = 10) {
 // ==========================================
 const STATION_COORDS = {
   "purple": [
-    {"name": "Whitefield", "lat": 12.995797906957534, "lng": 77.75794744491579, "isStation": true},
-    {"name": "Waypoint", "lat": 12.99349755172865, "lng": 77.75729298591615, "isStation": false},
-    {"name": "Waypoint", "lat": 12.992358045879557, "lng": 77.75681018829347, "isStation": false},
-    {"name": "Waypoint", "lat": 12.991406731860701, "lng": 77.75609135627748, "isStation": false},
-    {"name": "Waypoint", "lat": 12.990497156035099, "lng": 77.75540471076967, "isStation": false},
-    {"name": "Waypoint", "lat": 12.989514423871535, "lng": 77.75481462478639, "isStation": false},
-    {"name": "Channasandra", "lat": 12.98732998929229, "lng": 77.75382757186891, "isStation": true},
-    {"name": "Waypoint", "lat": 12.985196971740832, "lng": 77.75299072265626, "isStation": false},
-    {"name": "Waypoint", "lat": 12.984485963826213, "lng": 77.75238990783693, "isStation": false},
-    {"name": "Waypoint", "lat": 12.984235654019173, "lng": 77.75166034698488, "isStation": false},
-    {"name": "Waypoint", "lat": 12.984245470882938, "lng": 77.75104880332947, "isStation": false},
-    {"name": "Waypoint", "lat": 12.98444410668197, "lng": 77.75043725967409, "isStation": false},
-    {"name": "Waypoint", "lat": 12.984830944363257, "lng": 77.74920344352724, "isStation": false},
-    {"name": "Kadugodi Tree Park", "lat": 12.985760550518924, "lng": 77.74683237075807, "isStation": true},
-    {"name": "Waypoint", "lat": 12.986482676940646, "lng": 77.74460077285768, "isStation": false},
-    {"name": "Waypoint", "lat": 12.987047143104869, "lng": 77.74230480194093, "isStation": false},
-    {"name": "Waypoint", "lat": 12.987601249856793, "lng": 77.74010539054872, "isStation": false},
-    {"name": "Pattandur Agrahara", "lat": 12.987661840603332, "lng": 77.73782014846802, "isStation": true},
-    {"name": "Waypoint", "lat": 12.987653578892528, "lng": 77.73532032966615, "isStation": false},
-    {"name": "Waypoint", "lat": 12.987946217044831, "lng": 77.73363590240479, "isStation": false},
-    {"name": "Waypoint", "lat": 12.987862648288136, "lng": 77.7330780029297, "isStation": false},
-    {"name": "Waypoint", "lat": 12.987548165859037, "lng": 77.73259520530702, "isStation": false},
-    {"name": "Waypoint", "lat": 12.986712740372669, "lng": 77.73197293281557, "isStation": false},
-    {"name": "Waypoint", "lat": 12.986169089086012, "lng": 77.73113608360292, "isStation": false},
-    {"name": "Waypoint", "lat": 12.985646318462418, "lng": 77.7302670478821, "isStation": false},
-    {"name": "Waypoint", "lat": 12.984945742261878, "lng": 77.7295482158661, "isStation": false},
-    {"name": "Waypoint", "lat": 12.98401543825235, "lng": 77.72878646850587, "isStation": false},
-    {"name": "Waypoint", "lat": 12.983043192168367, "lng": 77.72807836532594, "isStation": false},
-    {"name": "Sri Sathya Sai Hospital", "lat": 12.981285852598875, "lng": 77.72743463516237, "isStation": true},
-    {"name": "Waypoint", "lat": 12.979561696549682, "lng": 77.72727370262147, "isStation": false},
-    {"name": "Waypoint", "lat": 12.978422211003927, "lng": 77.7273166179657, "isStation": false},
-    {"name": "Waypoint", "lat": 12.977293551034943, "lng": 77.7272415161133, "isStation": false},
-    {"name": "Waypoint", "lat": 12.976728578445503, "lng": 77.72691965103151, "isStation": false},
-    {"name": "Waypoint", "lat": 12.976498638119255, "lng": 77.72635102272035, "isStation": false},
-    {"name": "Nallurhalli", "lat": 12.976497519177956, "lng": 77.72485971450807, "isStation": true},
-    {"name": "Waypoint", "lat": 12.976874876925871, "lng": 77.72253155708314, "isStation": false},
-    {"name": "Waypoint", "lat": 12.97710488307796, "lng": 77.7201819419861, "isStation": false},
-    {"name": "Kundalahalli", "lat": 12.977563026841784, "lng": 77.71550416946413, "isStation": true},
-    {"name": "Waypoint", "lat": 12.978119365537141, "lng": 77.71147012710573, "isStation": false},
-    {"name": "Waypoint", "lat": 12.978255030962181, "lng": 77.7102041244507, "isStation": false},
-    {"name": "Waypoint", "lat": 12.978484990719213, "lng": 77.70961403846742, "isStation": false},
-    {"name": "Waypoint", "lat": 12.979081007703696, "lng": 77.70929217338563, "isStation": false},
-    {"name": "Seetharam Palya", "lat": 12.981077391271242, "lng": 77.70868062973024, "isStation": true},
-    {"name": "Waypoint", "lat": 12.983137268245901, "lng": 77.7082407474518, "isStation": false},
-    {"name": "Waypoint", "lat": 12.985248988471684, "lng": 77.70823001861574, "isStation": false},
-    {"name": "Waypoint", "lat": 12.986493137381801, "lng": 77.70866990089418, "isStation": false},
-    {"name": "Waypoint", "lat": 12.987622059356866, "lng": 77.70937800407411, "isStation": false},
-    {"name": "Hoodi", "lat": 12.988813792408452, "lng": 77.71119117736818, "isStation": true},
-    {"name": "Waypoint", "lat": 12.990214975157048, "lng": 77.71364808082582, "isStation": false},
-    {"name": "Waypoint", "lat": 12.990758524349273, "lng": 77.71391630172731, "isStation": false},
-    {"name": "Waypoint", "lat": 12.991302105436903, "lng": 77.71391630172731, "isStation": false},
-    {"name": "Waypoint", "lat": 12.991793468467929, "lng": 77.71364808082582, "isStation": false},
-    {"name": "Waypoint", "lat": 12.992127735028115, "lng": 77.71311163902284, "isStation": false},
-    {"name": "Waypoint", "lat": 12.992828366165561, "lng": 77.71074056625368, "isStation": false},
-    {"name": "Waypoint", "lat": 12.992901596396662, "lng": 77.70836949348451, "isStation": false},
-    {"name": "Waypoint", "lat": 12.99298531685097, "lng": 77.70604133605957, "isStation": false},
-    {"name": "Waypoint", "lat": 12.99308984030361, "lng": 77.70486116409303, "isStation": false},
-    {"name": "Garudachar Palya", "lat": 12.9934137682853, "lng": 77.7037024497986, "isStation": true},
-    {"name": "Waypoint", "lat": 12.994511708595262, "lng": 77.69941091537476, "isStation": false},
-    {"name": "Waypoint", "lat": 12.99513876358831, "lng": 77.69762992858888, "isStation": false},
-    {"name": "Waypoint", "lat": 12.995494228491175, "lng": 77.6952910423279, "isStation": false},
-    {"name": "Waypoint", "lat": 12.996058761396004, "lng": 77.69392848014833, "isStation": false},
-    {"name": "Saraswati Nagar", "lat": 12.996561540491129, "lng": 77.69251227378847, "isStation": true},
-    {"name": "Waypoint", "lat": 12.997156467442299, "lng": 77.69083857536317, "isStation": false},
-    {"name": "Waypoint", "lat": 12.997940601659666, "lng": 77.6892399787903, "isStation": false},
-    {"name": "Waypoint", "lat": 12.998620010807889, "lng": 77.68836021423341, "isStation": false},
-    {"name": "Waypoint", "lat": 12.999424828607461, "lng": 77.68759846687318, "isStation": false},
-    {"name": "Waypoint", "lat": 13.00011435069134, "lng": 77.68628954887392, "isStation": false},
-    {"name": "Waypoint", "lat": 13.000292592442749, "lng": 77.68516302108766, "isStation": false},
-    {"name": "Waypoint", "lat": 13.000334395786204, "lng": 77.68402576446535, "isStation": false},
-    {"name": "Waypoint", "lat": 13.000323878783389, "lng": 77.68177270889284, "isStation": false},
-    {"name": "Waypoint", "lat": 13.000031294318061, "lng": 77.68067836761476, "isStation": false},
-    {"name": "Waypoint", "lat": 12.999926689574641, "lng": 77.67958402633668, "isStation": false},
-    {"name": "K.R. Pura", "lat": 12.999865052160251, "lng": 77.6775348186493, "isStation": true},
-    {"name": "Waypoint", "lat": 12.999780314441278, "lng": 77.67619371414186, "isStation": false},
-    {"name": "Waypoint", "lat": 12.999268068466337, "lng": 77.67501354217531, "isStation": false},
-    {"name": "Waypoint", "lat": 12.998201826794354, "lng": 77.67278194427492, "isStation": false},
-    {"name": "Waypoint", "lat": 12.997104236654062, "lng": 77.67044305801392, "isStation": false},
-    {"name": "Waypoint", "lat": 12.996863704798837, "lng": 77.66921997070314, "isStation": false},
-    {"name": "Benniganahalli", "lat": 12.996466344631395, "lng": 77.6680612564087, "isStation": true},
-    {"name": "Baiyappanahalli", "lat": 12.9907, "lng": 77.6525, "isStation": true},
-    {"name": "Swami Vivekananda Road", "lat": 12.985949536747068, "lng": 77.64477968215944, "isStation": true},
-    {"name": "Indiranagar", "lat": 12.9783, "lng": 77.6387, "isStation": true},
-    {"name": "Halasuru", "lat": 12.976414680500946, "lng": 77.62654066085817, "isStation": true},
-    {"name": "Trinity", "lat": 12.973069262638074, "lng": 77.61690616607667, "isStation": true},
-    {"name": "MG Road", "lat": 12.9755, "lng": 77.6068, "isStation": true},
-    {"name": "Cubbon Park", "lat": 12.9798, "lng": 77.5975, "isStation": true},
-    {"name": "Vidhana Soudha", "lat": 12.9797, "lng": 77.59, "isStation": true},
-    {"name": "Central College", "lat": 12.9746, "lng": 77.5807, "isStation": true},
-    {"name": "Majestic", "lat": 12.9756, "lng": 77.5728, "isStation": true},
-    {"name": "KSR Railway Station", "lat": 12.9758, "lng": 77.5656, "isStation": true},
-    {"name": "Waypoint", "lat": 12.975735314395374, "lng": 77.56431877613069, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975636039658696, "lng": 77.56305813789369, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975588962605972, "lng": 77.56240904331209, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975620337783715, "lng": 77.56173312664032, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975761447076732, "lng": 77.56040811538698, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975803260564387, "lng": 77.55913138389587, "isStation": false},
-    {"name": "Waypoint", "lat": 12.97574576325716, "lng": 77.5578546524048, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975656920846651, "lng": 77.55658864974977, "isStation": false},
-    {"name": "Magadi Road", "lat": 12.975615101318564, "lng": 77.55530655384065, "isStation": true},
-    {"name": "Waypoint", "lat": 12.975547119003094, "lng": 77.55398690700532, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975515746824067, "lng": 77.55334854125978, "isStation": false},
-    {"name": "Waypoint", "lat": 12.975348306146818, "lng": 77.55277454853059, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974945969865068, "lng": 77.55221128463747, "isStation": false},
-    {"name": "Waypoint", "lat": 12.97451733468681, "lng": 77.5516963005066, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974093912707513, "lng": 77.55116522312166, "isStation": false},
-    {"name": "Waypoint", "lat": 12.9738848121785, "lng": 77.55085408687593, "isStation": false},
-    {"name": "Waypoint", "lat": 12.973770134001251, "lng": 77.55050003528596, "isStation": false},
-    {"name": "Waypoint", "lat": 12.97374889922192, "lng": 77.55021572113039, "isStation": false},
-    {"name": "Waypoint", "lat": 12.973827344507086, "lng": 77.54988312721254, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974219331431033, "lng": 77.54927694797517, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974527726449104, "lng": 77.54863858222961, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974553901368404, "lng": 77.54831135272981, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974485819501128, "lng": 77.54798948764802, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974313458974766, "lng": 77.54736185073854, "isStation": false},
-    {"name": "Waypoint", "lat": 12.974198493737417, "lng": 77.54669666290285, "isStation": false},
-    {"name": "Hosahalli", "lat": 12.97424019769827, "lng": 77.54537701606752, "isStation": true},
-    {"name": "Waypoint", "lat": 12.974187974124142, "lng": 77.54420757293703, "isStation": false},
-    {"name": "Waypoint", "lat": 12.97401022499161, "lng": 77.54302740097047, "isStation": false},
-    {"name": "Waypoint", "lat": 12.973549924003075, "lng": 77.54073143005373, "isStation": false},
-    {"name": "Waypoint", "lat": 12.9730954647824, "lng": 77.53891289234163, "isStation": false},
-    {"name": "Waypoint", "lat": 12.972881114859423, "lng": 77.53852665424348, "isStation": false},
-    {"name": "Waypoint", "lat": 12.972624958256548, "lng": 77.53818869590759, "isStation": false},
-    {"name": "Waypoint", "lat": 12.972332226867113, "lng": 77.53794729709627, "isStation": false},
-    {"name": "Waypoint", "lat": 12.971997647925084, "lng": 77.53774881362916, "isStation": false},
-    {"name": "Vijayanagar", "lat": 12.970674971189192, "lng": 77.5372338294983, "isStation": true},
-    {"name": "Waypoint", "lat": 12.969566870495523, "lng": 77.53693342208864, "isStation": false},
-    {"name": "Waypoint", "lat": 12.968510896395083, "lng": 77.53656864166261, "isStation": false},
-    {"name": "Waypoint", "lat": 12.966378024207518, "lng": 77.53559231758119, "isStation": false},
-    {"name": "Waypoint", "lat": 12.965322042589811, "lng": 77.53507733345033, "isStation": false},
-    {"name": "Waypoint", "lat": 12.964266056491313, "lng": 77.5346213579178, "isStation": false},
-    {"name": "Waypoint", "lat": 12.963194384309569, "lng": 77.53415465354921, "isStation": false},
-    {"name": "Attiguppe", "lat": 12.96213316296332, "lng": 77.5336664915085, "isStation": true},
-    {"name": "Waypoint", "lat": 12.960716444025664, "lng": 77.53310859203339, "isStation": false},
-    {"name": "Waypoint", "lat": 12.960031601230268, "lng": 77.53306031227113, "isStation": false},
-    {"name": "Waypoint", "lat": 12.95937292103489, "lng": 77.53326416015626, "isStation": false},
-    {"name": "Waypoint", "lat": 12.958071178684506, "lng": 77.53385424613954, "isStation": false},
-    {"name": "Waypoint", "lat": 12.957307923267413, "lng": 77.5342082977295, "isStation": false},
-    {"name": "Waypoint", "lat": 12.95660221087297, "lng": 77.53442823886873, "isStation": false},
-    {"name": "Waypoint", "lat": 12.955305681906884, "lng": 77.5347286462784, "isStation": false},
-    {"name": "Waypoint", "lat": 12.954746273824801, "lng": 77.53516852855684, "isStation": false},
-    {"name": "Waypoint", "lat": 12.95423396664487, "lng": 77.53568887710573, "isStation": false},
-    {"name": "Waypoint", "lat": 12.953266743343182, "lng": 77.53661155700685, "isStation": false},
-    {"name": "Deepanjali Nagar", "lat": 12.9520961202318, "lng": 77.53702998161317, "isStation": true},
-    {"name": "Waypoint", "lat": 12.95140563321002, "lng": 77.53723919391634, "isStation": false},
-    {"name": "Waypoint", "lat": 12.950757357550629, "lng": 77.53735184669496, "isStation": false},
-    {"name": "Waypoint", "lat": 12.950386179383802, "lng": 77.53729283809662, "isStation": false},
-    {"name": "Waypoint", "lat": 12.950035918596054, "lng": 77.5371426343918, "isStation": false},
-    {"name": "Waypoint", "lat": 12.949440083238814, "lng": 77.53660082817079, "isStation": false},
-    {"name": "Waypoint", "lat": 12.948582555840465, "lng": 77.53544211387636, "isStation": false},
-    {"name": "Waypoint", "lat": 12.948247935955157, "lng": 77.53478765487672, "isStation": false},
-    {"name": "Waypoint", "lat": 12.947966017002248, "lng": 77.53405809402467, "isStation": false},
-    {"name": "Waypoint", "lat": 12.947364371075409, "lng": 77.53197133541109, "isStation": false},
-    {"name": "Waypoint", "lat": 12.947035012191082, "lng": 77.53091990947725, "isStation": false},
-    {"name": "Mysuru Road", "lat": 12.946627143387234, "lng": 77.52990603446962, "isStation": true},
-    {"name": "Waypoint", "lat": 12.946193297571698, "lng": 77.52908527851106, "isStation": false},
-    {"name": "Waypoint", "lat": 12.945686143718248, "lng": 77.52830743789674, "isStation": false},
-    {"name": "Waypoint", "lat": 12.945095405712182, "lng": 77.52762615680696, "isStation": false},
-    {"name": "Waypoint", "lat": 12.9444522725426, "lng": 77.52699851989746, "isStation": false},
-    {"name": "Waypoint", "lat": 12.943093042144232, "lng": 77.5259953737259, "isStation": false},
-    {"name": "Nayandahalli", "lat": 12.941680594732656, "lng": 77.52503514289857, "isStation": true},
-    {"name": "Waypoint", "lat": 12.940907687135297, "lng": 77.52454698085786, "isStation": false},
-    {"name": "Waypoint", "lat": 12.94017050653615, "lng": 77.52400517463686, "isStation": false},
-    {"name": "Waypoint", "lat": 12.939449030922987, "lng": 77.52333998680116, "isStation": false},
-    {"name": "Waypoint", "lat": 12.939098738220729, "lng": 77.52300202846527, "isStation": false},
-    {"name": "Waypoint", "lat": 12.938795599740748, "lng": 77.52256214618684, "isStation": false},
-    {"name": "Waypoint", "lat": 12.938241279037301, "lng": 77.52169311046602, "isStation": false},
-    {"name": "Waypoint", "lat": 12.937906688892724, "lng": 77.52134978771211, "isStation": false},
-    {"name": "Waypoint", "lat": 12.93751986402724, "lng": 77.52104938030244, "isStation": false},
-    {"name": "Waypoint", "lat": 12.937195670747546, "lng": 77.52075970172884, "isStation": false},
-    {"name": "Waypoint", "lat": 12.936976099278812, "lng": 77.52035200595857, "isStation": false},
-    {"name": "Rajarajeshwari Nagar", "lat": 12.93663882545896, "lng": 77.51953125000001, "isStation": true},
-    {"name": "Waypoint", "lat": 12.936400990834777, "lng": 77.518630027771, "isStation": false},
-    {"name": "Waypoint", "lat": 12.936348688628659, "lng": 77.51815259456636, "isStation": false},
-    {"name": "Waypoint", "lat": 12.936369609211576, "lng": 77.51766443252565, "isStation": false},
-    {"name": "Waypoint", "lat": 12.93634866305733, "lng": 77.51673638820648, "isStation": false},
-    {"name": "Waypoint", "lat": 12.93622838283317, "lng": 77.51579761505128, "isStation": false},
-    {"name": "Waypoint", "lat": 12.936076747966517, "lng": 77.51393079757692, "isStation": false},
-    {"name": "Jnanabharathi", "lat": 12.935459884883624, "lng": 77.51218199729921, "isStation": true},
-    {"name": "Waypoint", "lat": 12.935052015195659, "lng": 77.51114666461945, "isStation": false},
-    {"name": "Waypoint", "lat": 12.934717441831904, "lng": 77.51066386699678, "isStation": false},
-    {"name": "Waypoint", "lat": 12.934299136876085, "lng": 77.51025617122652, "isStation": false},
-    {"name": "Waypoint", "lat": 12.932772466076083, "lng": 77.5085073709488, "isStation": false},
-    {"name": "Waypoint", "lat": 12.932098072397553, "lng": 77.50762224197389, "isStation": false},
-    {"name": "Waypoint", "lat": 12.931496728140562, "lng": 77.50668883323671, "isStation": false},
-    {"name": "Waypoint", "lat": 12.931298116286833, "lng": 77.50646889209749, "isStation": false},
-    {"name": "Pattanagere", "lat": 12.925439401768407, "lng": 77.49964535236359, "isStation": true},
-    {"name": "Waypoint", "lat": 12.923839659358249, "lng": 77.4975210428238, "isStation": false},
-    {"name": "Waypoint", "lat": 12.922114299942008, "lng": 77.49526798725128, "isStation": false},
-    {"name": "Waypoint", "lat": 12.920556193798991, "lng": 77.49320805072784, "isStation": false},
-    {"name": "Waypoint", "lat": 12.918935272097063, "lng": 77.49089062213898, "isStation": false},
-    {"name": "Waypoint", "lat": 12.917397987747805, "lng": 77.48869121074678, "isStation": false},
-    {"name": "Kengeri Bus Terminal", "lat": 12.916174384025178, "lng": 77.48684585094452, "isStation": true},
-    {"name": "Waypoint", "lat": 12.91428135896947, "lng": 77.4841958284378, "isStation": false},
-    {"name": "Waypoint", "lat": 12.912649774640166, "lng": 77.48184621334076, "isStation": false},
-    {"name": "Waypoint", "lat": 12.911049514781498, "lng": 77.47953951358797, "isStation": false},
-    {"name": "Kengeri", "lat": 12.908058140608552, "lng": 77.47525870800018, "isStation": true},
-    {"name": "Waypoint", "lat": 12.907315555462529, "lng": 77.47414290904999, "isStation": false},
-    {"name": "Waypoint", "lat": 12.906493477688105, "lng": 77.47301101684572, "isStation": false},
-    {"name": "Waypoint", "lat": 12.905824202844684, "lng": 77.47209906578065, "isStation": false},
-    {"name": "Waypoint", "lat": 12.905149632602608, "lng": 77.47113347053529, "isStation": false},
-    {"name": "Waypoint", "lat": 12.904720883453855, "lng": 77.47069895267488, "isStation": false},
-    {"name": "Waypoint", "lat": 12.904213651365326, "lng": 77.47036635875703, "isStation": false},
-    {"name": "Waypoint", "lat": 12.903225429693272, "lng": 77.46978163719177, "isStation": false},
-    {"name": "Waypoint", "lat": 12.902733907055078, "lng": 77.46944904327393, "isStation": false},
-    {"name": "Waypoint", "lat": 12.90232090839742, "lng": 77.4690091609955, "isStation": false},
-    {"name": "Waypoint", "lat": 12.901170425281643, "lng": 77.46703505516054, "isStation": false},
-    {"name": "Waypoint", "lat": 12.899972989970522, "lng": 77.46513605117799, "isStation": false},
-    {"name": "Challaghatta", "lat": 12.89745789202359, "lng": 77.46125757694244, "isStation": true}
+    {
+      "name": "Whitefield",
+      "lat": 12.995797906957534,
+      "lng": 77.75794744491579,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99349755172865,
+      "lng": 77.75729298591615,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.992358045879557,
+      "lng": 77.75681018829347,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.991406731860701,
+      "lng": 77.75609135627748,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.990497156035099,
+      "lng": 77.75540471076967,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.989514423871535,
+      "lng": 77.75481462478639,
+      "isStation": false
+    },
+    {
+      "name": "Channasandra",
+      "lat": 12.98732998929229,
+      "lng": 77.75382757186891,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.985196971740832,
+      "lng": 77.75299072265626,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.984485963826213,
+      "lng": 77.75238990783693,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.984235654019173,
+      "lng": 77.75166034698488,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.984245470882938,
+      "lng": 77.75104880332947,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.98444410668197,
+      "lng": 77.75043725967409,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.984830944363257,
+      "lng": 77.74920344352724,
+      "isStation": false
+    },
+    {
+      "name": "Kadugodi Tree Park",
+      "lat": 12.985760550518924,
+      "lng": 77.74683237075807,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.986482676940646,
+      "lng": 77.74460077285768,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987047143104869,
+      "lng": 77.74230480194093,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987601249856793,
+      "lng": 77.74010539054872,
+      "isStation": false
+    },
+    {
+      "name": "Pattandur Agrahara",
+      "lat": 12.987661840603332,
+      "lng": 77.73782014846802,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987653578892528,
+      "lng": 77.73532032966615,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987946217044831,
+      "lng": 77.73363590240479,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987862648288136,
+      "lng": 77.7330780029297,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987548165859037,
+      "lng": 77.73259520530702,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.986712740372669,
+      "lng": 77.73197293281557,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.986169089086012,
+      "lng": 77.73113608360292,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.985646318462418,
+      "lng": 77.7302670478821,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.984945742261878,
+      "lng": 77.7295482158661,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.98401543825235,
+      "lng": 77.72878646850587,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.983043192168367,
+      "lng": 77.72807836532594,
+      "isStation": false
+    },
+    {
+      "name": "Sri Sathya Sai Hospital",
+      "lat": 12.981285852598875,
+      "lng": 77.72743463516237,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.979561696549682,
+      "lng": 77.72727370262147,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978422211003927,
+      "lng": 77.7273166179657,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.977293551034943,
+      "lng": 77.7272415161133,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.976728578445503,
+      "lng": 77.72691965103151,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.976498638119255,
+      "lng": 77.72635102272035,
+      "isStation": false
+    },
+    {
+      "name": "Nallurhalli",
+      "lat": 12.976497519177956,
+      "lng": 77.72485971450807,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.976874876925871,
+      "lng": 77.72253155708314,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97710488307796,
+      "lng": 77.7201819419861,
+      "isStation": false
+    },
+    {
+      "name": "Kundalahalli",
+      "lat": 12.977563026841784,
+      "lng": 77.71550416946413,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978119365537141,
+      "lng": 77.71147012710573,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978255030962181,
+      "lng": 77.7102041244507,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978484990719213,
+      "lng": 77.70961403846742,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.979081007703696,
+      "lng": 77.70929217338563,
+      "isStation": false
+    },
+    {
+      "name": "Seetharam Palya",
+      "lat": 12.981077391271242,
+      "lng": 77.70868062973024,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.983137268245901,
+      "lng": 77.7082407474518,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.985248988471684,
+      "lng": 77.70823001861574,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.986493137381801,
+      "lng": 77.70866990089418,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987622059356866,
+      "lng": 77.70937800407411,
+      "isStation": false
+    },
+    {
+      "name": "Hoodi",
+      "lat": 12.988813792408452,
+      "lng": 77.71119117736818,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.990214975157048,
+      "lng": 77.71364808082582,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.990758524349273,
+      "lng": 77.71391630172731,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.991302105436903,
+      "lng": 77.71391630172731,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.991793468467929,
+      "lng": 77.71364808082582,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.992127735028115,
+      "lng": 77.71311163902284,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.992828366165561,
+      "lng": 77.71074056625368,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.992901596396662,
+      "lng": 77.70836949348451,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99298531685097,
+      "lng": 77.70604133605957,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99308984030361,
+      "lng": 77.70486116409303,
+      "isStation": false
+    },
+    {
+      "name": "Garudachar Palya",
+      "lat": 12.9934137682853,
+      "lng": 77.7037024497986,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.994511708595262,
+      "lng": 77.69941091537476,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99513876358831,
+      "lng": 77.69762992858888,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.995494228491175,
+      "lng": 77.6952910423279,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996058761396004,
+      "lng": 77.69392848014833,
+      "isStation": false
+    },
+    {
+      "name": "Saraswati Nagar",
+      "lat": 12.996561540491129,
+      "lng": 77.69251227378847,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.997156467442299,
+      "lng": 77.69083857536317,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.997940601659666,
+      "lng": 77.6892399787903,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998620010807889,
+      "lng": 77.68836021423341,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.999424828607461,
+      "lng": 77.68759846687318,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.00011435069134,
+      "lng": 77.68628954887392,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.000292592442749,
+      "lng": 77.68516302108766,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.000334395786204,
+      "lng": 77.68402576446535,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.000323878783389,
+      "lng": 77.68177270889284,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.000031294318061,
+      "lng": 77.68067836761476,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.999926689574641,
+      "lng": 77.67958402633668,
+      "isStation": false
+    },
+    {
+      "name": "K.R. Pura",
+      "lat": 12.999865052160251,
+      "lng": 77.6775348186493,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.999780314441278,
+      "lng": 77.67619371414186,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.999268068466337,
+      "lng": 77.67501354217531,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998201826794354,
+      "lng": 77.67278194427492,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.997104236654062,
+      "lng": 77.67044305801392,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996863704798837,
+      "lng": 77.66921997070314,
+      "isStation": false
+    },
+    {
+      "name": "Benniganahalli",
+      "lat": 12.996330613959516,
+      "lng": 77.66808271408082,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.995557052015256,
+      "lng": 77.66606569290163,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9953479199206,
+      "lng": 77.66502499580385,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99529571582097,
+      "lng": 77.66399502754213,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99555694975428,
+      "lng": 77.66300797462465,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.995640452760627,
+      "lng": 77.66192436218263,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.995326969706987,
+      "lng": 77.66091585159303,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.994897974175597,
+      "lng": 77.65996098518372,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.992723935841878,
+      "lng": 77.65621662139894,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.991323164268291,
+      "lng": 77.65451073646547,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.991040779803024,
+      "lng": 77.65349149703981,
+      "isStation": false
+    },
+    {
+      "name": "Baiyappanahalli",
+      "lat": 12.990706250106898,
+      "lng": 77.65239715576173,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.990089475777014,
+      "lng": 77.64998316764833,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.989901262680952,
+      "lng": 77.64944672584535,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.98963953855044,
+      "lng": 77.6490604877472,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.988939460867396,
+      "lng": 77.64859914779665,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.988124085545362,
+      "lng": 77.64838457107545,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.987360919341048,
+      "lng": 77.64798760414125,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.986922036143605,
+      "lng": 77.6473116874695,
+      "isStation": false
+    },
+    {
+      "name": "Swami Vivekananda Road",
+      "lat": 12.985949536747068,
+      "lng": 77.64477968215944,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.984349348325916,
+      "lng": 77.64094948768617,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.98386906577144,
+      "lng": 77.64063835144044,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.98329392727984,
+      "lng": 77.64057397842409,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.981182292707464,
+      "lng": 77.6406490802765,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.979258726140339,
+      "lng": 77.64078855514526,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978641797063696,
+      "lng": 77.64046669006349,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97844312955643,
+      "lng": 77.6401448249817,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978328157204842,
+      "lng": 77.63974785804749,
+      "isStation": false
+    },
+    {
+      "name": "Indiranagar",
+      "lat": 12.9783,
+      "lng": 77.6387,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978181510664875,
+      "lng": 77.6323449611664,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978463690169091,
+      "lng": 77.62913703918458,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978160817681852,
+      "lng": 77.62832164764406,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97771120476363,
+      "lng": 77.62757062911989,
+      "isStation": false
+    },
+    {
+      "name": "Halasuru",
+      "lat": 12.976414680500946,
+      "lng": 77.62654066085817,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975860783425576,
+      "lng": 77.62619733810426,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97534853324481,
+      "lng": 77.6257574558258,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974595791761312,
+      "lng": 77.62460947036745,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.973267925415119,
+      "lng": 77.62234568595888,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972797529005744,
+      "lng": 77.62107968330385,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972661710205502,
+      "lng": 77.61971712112428,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972630215840342,
+      "lng": 77.61901974678041,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972703433975754,
+      "lng": 77.61831164360048,
+      "isStation": false
+    },
+    {
+      "name": "Trinity",
+      "lat": 12.973058858783032,
+      "lng": 77.6169276237488,
+      "isStation": true
+    },
+    {
+      "name": "MG Road",
+      "lat": 12.9755,
+      "lng": 77.6068,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.976561565707637,
+      "lng": 77.6023578643799,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.976843581615839,
+      "lng": 77.60183215141298,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.977460433941639,
+      "lng": 77.60143518447877,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.978819305262839,
+      "lng": 77.6008987426758,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.979990222267993,
+      "lng": 77.6002335548401,
+      "isStation": false
+    },
+    {
+      "name": "Cubbon Park",
+      "lat": 12.981223660121627,
+      "lng": 77.59669303894044,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.981830425945345,
+      "lng": 77.59456872940065,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.980334993983684,
+      "lng": 77.59313642978668,
+      "isStation": false
+    },
+    {
+      "name": "Vidhana Soudha",
+      "lat": 12.978605480637421,
+      "lng": 77.59139835834503,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.977261765490358,
+      "lng": 77.58989095687868,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.976190194411041,
+      "lng": 77.58795440196992,
+      "isStation": false
+    },
+    {
+      "name": "Central College",
+      "lat": 12.974386679622562,
+      "lng": 77.58398473262788,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972965365441803,
+      "lng": 77.5812327861786,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974888297899883,
+      "lng": 77.57715582847597,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975641110687956,
+      "lng": 77.57499933242799,
+      "isStation": false
+    },
+    {
+      "name": "Majestic",
+      "lat": 12.9756,
+      "lng": 77.5728,
+      "isStation": true
+    },
+    {
+      "name": "KSR Railway Station",
+      "lat": 12.9758,
+      "lng": 77.5656,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975735314395374,
+      "lng": 77.56431877613069,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975636039658696,
+      "lng": 77.56305813789369,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975588962605972,
+      "lng": 77.56240904331209,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975620337783715,
+      "lng": 77.56173312664032,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975761447076732,
+      "lng": 77.56040811538698,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975803260564387,
+      "lng": 77.55913138389587,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97574576325716,
+      "lng": 77.5578546524048,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975656920846651,
+      "lng": 77.55658864974977,
+      "isStation": false
+    },
+    {
+      "name": "Magadi Road",
+      "lat": 12.975615101318564,
+      "lng": 77.55530655384065,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975547119003094,
+      "lng": 77.55398690700532,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975515746824067,
+      "lng": 77.55334854125978,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.975348306146818,
+      "lng": 77.55277454853059,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974945969865068,
+      "lng": 77.55221128463747,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97451733468681,
+      "lng": 77.5516963005066,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974093912707513,
+      "lng": 77.55116522312166,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9738848121785,
+      "lng": 77.55085408687593,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.973770134001251,
+      "lng": 77.55050003528596,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97374889922192,
+      "lng": 77.55021572113039,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.973827344507086,
+      "lng": 77.54988312721254,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974219331431033,
+      "lng": 77.54927694797517,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974527726449104,
+      "lng": 77.54863858222961,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974553901368404,
+      "lng": 77.54831135272981,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974485819501128,
+      "lng": 77.54798948764802,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974313458974766,
+      "lng": 77.54736185073854,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974198493737417,
+      "lng": 77.54669666290285,
+      "isStation": false
+    },
+    {
+      "name": "Hosahalli",
+      "lat": 12.97424019769827,
+      "lng": 77.54537701606752,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.974187974124142,
+      "lng": 77.54420757293703,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97401022499161,
+      "lng": 77.54302740097047,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.973549924003075,
+      "lng": 77.54073143005373,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9730954647824,
+      "lng": 77.53891289234163,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972881114859423,
+      "lng": 77.53852665424348,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972624958256548,
+      "lng": 77.53818869590759,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972332226867113,
+      "lng": 77.53794729709627,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.971997647925084,
+      "lng": 77.53774881362916,
+      "isStation": false
+    },
+    {
+      "name": "Vijayanagar",
+      "lat": 12.970674971189192,
+      "lng": 77.5372338294983,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.969566870495523,
+      "lng": 77.53693342208864,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.968510896395083,
+      "lng": 77.53656864166261,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.966378024207518,
+      "lng": 77.53559231758119,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.965322042589811,
+      "lng": 77.53507733345033,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.964266056491313,
+      "lng": 77.5346213579178,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.963194384309569,
+      "lng": 77.53415465354921,
+      "isStation": false
+    },
+    {
+      "name": "Attiguppe",
+      "lat": 12.96213316296332,
+      "lng": 77.5336664915085,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.960716444025664,
+      "lng": 77.53310859203339,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.960031601230268,
+      "lng": 77.53306031227113,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.95937292103489,
+      "lng": 77.53326416015626,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.958071178684506,
+      "lng": 77.53385424613954,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.957307923267413,
+      "lng": 77.5342082977295,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.95660221087297,
+      "lng": 77.53442823886873,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.955305681906884,
+      "lng": 77.5347286462784,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.954746273824801,
+      "lng": 77.53516852855684,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.95423396664487,
+      "lng": 77.53568887710573,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.953266743343182,
+      "lng": 77.53661155700685,
+      "isStation": false
+    },
+    {
+      "name": "Deepanjali Nagar",
+      "lat": 12.9520961202318,
+      "lng": 77.53702998161317,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.95140563321002,
+      "lng": 77.53723919391634,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.950757357550629,
+      "lng": 77.53735184669496,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.950386179383802,
+      "lng": 77.53729283809662,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.950035918596054,
+      "lng": 77.5371426343918,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.949440083238814,
+      "lng": 77.53660082817079,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948582555840465,
+      "lng": 77.53544211387636,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948247935955157,
+      "lng": 77.53478765487672,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.947966017002248,
+      "lng": 77.53405809402467,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.947364371075409,
+      "lng": 77.53197133541109,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.947035012191082,
+      "lng": 77.53091990947725,
+      "isStation": false
+    },
+    {
+      "name": "Mysuru Road",
+      "lat": 12.946627143387234,
+      "lng": 77.52990603446962,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.946193297571698,
+      "lng": 77.52908527851106,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.945686143718248,
+      "lng": 77.52830743789674,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.945095405712182,
+      "lng": 77.52762615680696,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9444522725426,
+      "lng": 77.52699851989746,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.943093042144232,
+      "lng": 77.5259953737259,
+      "isStation": false
+    },
+    {
+      "name": "Nayandahalli",
+      "lat": 12.941680594732656,
+      "lng": 77.52503514289857,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.940907687135297,
+      "lng": 77.52454698085786,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.94017050653615,
+      "lng": 77.52400517463686,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.939449030922987,
+      "lng": 77.52333998680116,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.939098738220729,
+      "lng": 77.52300202846527,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.938795599740748,
+      "lng": 77.52256214618684,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.938241279037301,
+      "lng": 77.52169311046602,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.937906688892724,
+      "lng": 77.52134978771211,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.93751986402724,
+      "lng": 77.52104938030244,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.937195670747546,
+      "lng": 77.52075970172884,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.936976099278812,
+      "lng": 77.52035200595857,
+      "isStation": false
+    },
+    {
+      "name": "Rajarajeshwari Nagar",
+      "lat": 12.93663882545896,
+      "lng": 77.51953125000001,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.936400990834777,
+      "lng": 77.518630027771,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.936348688628659,
+      "lng": 77.51815259456636,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.936369609211576,
+      "lng": 77.51766443252565,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.93634866305733,
+      "lng": 77.51673638820648,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.93622838283317,
+      "lng": 77.51579761505128,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.936076747966517,
+      "lng": 77.51393079757692,
+      "isStation": false
+    },
+    {
+      "name": "Jnanabharathi",
+      "lat": 12.935459884883624,
+      "lng": 77.51218199729921,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.935052015195659,
+      "lng": 77.51114666461945,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.934717441831904,
+      "lng": 77.51066386699678,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.934299136876085,
+      "lng": 77.51025617122652,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.932772466076083,
+      "lng": 77.5085073709488,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.932098072397553,
+      "lng": 77.50762224197389,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.931496728140562,
+      "lng": 77.50668883323671,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.931298116286833,
+      "lng": 77.50646889209749,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.931062839456352,
+      "lng": 77.50628113746644,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.930592295659538,
+      "lng": 77.50603437423707,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.930121746462818,
+      "lng": 77.5057500600815,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.929719183699087,
+      "lng": 77.50531017780305,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.929530935489574,
+      "lng": 77.50497221946718,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.929400229753808,
+      "lng": 77.50459134578706,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.929175397436648,
+      "lng": 77.50383496284486,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.928652483083647,
+      "lng": 77.50323414802553,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.927805566731953,
+      "lng": 77.5025099515915,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.927110120942329,
+      "lng": 77.50157117843628,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.926467049707753,
+      "lng": 77.50064313411714,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.92614288569117,
+      "lng": 77.50019788742067,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.925755959854502,
+      "lng": 77.49979019165039,
+      "isStation": false
+    },
+    {
+      "name": "Pattanagere",
+      "lat": 12.924216159319341,
+      "lng": 77.49815940856935,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.923591412245774,
+      "lng": 77.49750494956972,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.923345653023999,
+      "lng": 77.49711871147157,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.923167908237453,
+      "lng": 77.49666810035706,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.922791409317329,
+      "lng": 77.49582052230836,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.922367825729646,
+      "lng": 77.49502122402193,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.921928697123136,
+      "lng": 77.49427020549776,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.921437142070651,
+      "lng": 77.49358355998994,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.920459543477122,
+      "lng": 77.49289691448213,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.919978292321016,
+      "lng": 77.49239265918733,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91935098636425,
+      "lng": 77.49162554740907,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.918582368758829,
+      "lng": 77.4911266565323,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916961521873992,
+      "lng": 77.49032735824586,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.915774621094691,
+      "lng": 77.4890184402466,
+      "isStation": false
+    },
+    {
+      "name": "Kengeri Bus Terminal",
+      "lat": 12.91470150996608,
+      "lng": 77.48760223388672,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9135628290172,
+      "lng": 77.48613238334657,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.912977215145201,
+      "lng": 77.48534917831422,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.912245299674911,
+      "lng": 77.48495221138002,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.911136767793902,
+      "lng": 77.4846786260605,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.910713197541204,
+      "lng": 77.48439967632295,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.910556316868977,
+      "lng": 77.48417973518373,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.910446519445118,
+      "lng": 77.48393297195436,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.910389002549593,
+      "lng": 77.4834716320038,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91042036637722,
+      "lng": 77.48301029205324,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91042583437777,
+      "lng": 77.48210906982423,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.910174586676808,
+      "lng": 77.48135805130006,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.909777208549142,
+      "lng": 77.48068749904634,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.909317110895607,
+      "lng": 77.48000085353853,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.909060888984456,
+      "lng": 77.4792391061783,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.908809897157452,
+      "lng": 77.4784290790558,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.908652959629311,
+      "lng": 77.4775815010071,
+      "isStation": false
+    },
+    {
+      "name": "Kengeri",
+      "lat": 12.90790004685138,
+      "lng": 77.47627794742586,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.907539286749866,
+      "lng": 77.47583806514741,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.907283108147771,
+      "lng": 77.4752587080002,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.907021569523124,
+      "lng": 77.47401952743532,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9068124413256,
+      "lng": 77.47350454330446,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.906493477688105,
+      "lng": 77.47301101684572,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.905824202844684,
+      "lng": 77.47209906578065,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.905149632602608,
+      "lng": 77.47113347053529,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.904720883453855,
+      "lng": 77.47069895267488,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.904213651365326,
+      "lng": 77.47036635875703,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.903225429693272,
+      "lng": 77.46978163719177,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.902733907055078,
+      "lng": 77.46944904327393,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.90232090839742,
+      "lng": 77.4690091609955,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.901170425281643,
+      "lng": 77.46703505516054,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.899972989970522,
+      "lng": 77.46513605117799,
+      "isStation": false
+    },
+    {
+      "name": "Challaghatta",
+      "lat": 12.89745789202359,
+      "lng": 77.46125757694244,
+      "isStation": true
+    }
   ],
   "green": [
-    {"name": "Madavara", "lat": 13.057529978885169, "lng": 77.47281789779665, "isStation": true},
-    {"name": "Waypoint", "lat": 13.056585339137644, "lng": 77.47658371925355, "isStation": false},
-    {"name": "Waypoint", "lat": 13.056318870159199, "lng": 77.47753322124483, "isStation": false},
-    {"name": "Waypoint", "lat": 13.055953069615528, "lng": 77.47843980789186, "isStation": false},
-    {"name": "Waypoint", "lat": 13.055195353122505, "lng": 77.48025834560396, "isStation": false},
-    {"name": "Waypoint", "lat": 13.054819102379916, "lng": 77.48118638992311, "isStation": false},
-    {"name": "Waypoint", "lat": 13.053815734195743, "lng": 77.4840134382248, "isStation": false},
-    {"name": "Waypoint", "lat": 13.05314163309351, "lng": 77.48585343360901, "isStation": false},
-    {"name": "Chikkabidarakallu", "lat": 13.052504092855676, "lng": 77.48769342899324, "isStation": true},
-    {"name": "Waypoint", "lat": 13.051296928416697, "lng": 77.49094426631929, "isStation": false},
-    {"name": "Waypoint", "lat": 13.051004258322708, "lng": 77.49175429344177, "isStation": false},
-    {"name": "Waypoint", "lat": 13.050763853976493, "lng": 77.4925857782364, "isStation": false},
-    {"name": "Waypoint", "lat": 13.050513014210395, "lng": 77.49340116977693, "isStation": false},
-    {"name": "Manjunathanagar", "lat": 13.050220394307392, "lng": 77.49417364597322, "isStation": true},
-    {"name": "Nagasandra", "lat": 13.048083006304285, "lng": 77.49992430210115, "isStation": true},
-    {"name": "Waypoint", "lat": 13.046922840192762, "lng": 77.50305175781251, "isStation": false},
-    {"name": "Waypoint", "lat": 13.046342760357897, "lng": 77.50461280345918, "isStation": false},
-    {"name": "Waypoint", "lat": 13.046065780310991, "lng": 77.50540137290955, "isStation": false},
-    {"name": "Waypoint", "lat": 13.045799263906455, "lng": 77.50640451908113, "isStation": false},
-    {"name": "Waypoint", "lat": 13.045355010121474, "lng": 77.50797629356386, "isStation": false},
-    {"name": "Waypoint", "lat": 13.045051926143861, "lng": 77.50873804092409, "isStation": false},
-    {"name": "Waypoint", "lat": 13.044696554882798, "lng": 77.50941932201385, "isStation": false},
-    {"name": "Waypoint", "lat": 13.043944068977886, "lng": 77.51086771488191, "isStation": false},
-    {"name": "Dasarahalli", "lat": 13.04337965117424, "lng": 77.51235365867615, "isStation": true},
-    {"name": "Waypoint", "lat": 13.042762923712042, "lng": 77.51432776451112, "isStation": false},
-    {"name": "Waypoint", "lat": 13.042423240794557, "lng": 77.51528263092042, "isStation": false},
-    {"name": "Waypoint", "lat": 13.042005029965651, "lng": 77.5162321329117, "isStation": false},
-    {"name": "Waypoint", "lat": 13.041728181884285, "lng": 77.5167042016983, "isStation": false},
-    {"name": "Waypoint", "lat": 13.041404162179099, "lng": 77.51710116863251, "isStation": false},
-    {"name": "Waypoint", "lat": 13.04071959163697, "lng": 77.51784145832063, "isStation": false},
-    {"name": "Waypoint", "lat": 13.040181259291495, "lng": 77.51845836639406, "isStation": false},
-    {"name": "Jalahalli", "lat": 13.039533275547063, "lng": 77.5196009874344, "isStation": true},
-    {"name": "Peenya Industry", "lat": 13.036387119607804, "lng": 77.52548038959505, "isStation": true},
-    {"name": "Waypoint", "lat": 13.035874965832384, "lng": 77.52636551856996, "isStation": false},
-    {"name": "Waypoint", "lat": 13.035498714260129, "lng": 77.52736866474153, "isStation": false},
-    {"name": "Waypoint", "lat": 13.034975939365394, "lng": 77.52958416938783, "isStation": false},
-    {"name": "Waypoint", "lat": 13.034557927955868, "lng": 77.53062486648561, "isStation": false},
-    {"name": "Waypoint", "lat": 13.034009167372826, "lng": 77.5315797328949, "isStation": false},
-    {"name": "Peenya", "lat": 13.032875096504121, "lng": 77.53351628780366, "isStation": true},
-    {"name": "Waypoint", "lat": 13.031735776137014, "lng": 77.53538310527803, "isStation": false},
-    {"name": "Waypoint", "lat": 13.03053374263817, "lng": 77.53718018531801, "isStation": false},
-    {"name": "Waypoint", "lat": 13.030110217758718, "lng": 77.53782927989961, "isStation": false},
-    {"name": "Goraguntepalya", "lat": 13.028338682885405, "lng": 77.54093527793886, "isStation": true},
-    {"name": "Yeshwanthpur", "lat": 13.023248211385285, "lng": 77.54987239837648, "isStation": true},
-    {"name": "Sandal Soap Factory", "lat": 13.01465055472074, "lng": 77.55400300025941, "isStation": true},
-    {"name": "Mahalakshmi", "lat": 13.00846753549171, "lng": 77.54882097244264, "isStation": true},
-    {"name": "Rajajinagar", "lat": 13.00025602353431, "lng": 77.5496953725815, "isStation": true},
-    {"name": "Kuvempu Road", "lat": 12.998505014710673, "lng": 77.5569534301758, "isStation": true},
-    {"name": "Srirampura", "lat": 12.996567828878192, "lng": 77.56313323974611, "isStation": true},
-    {"name": "Sampige Road", "lat": 12.990439656112018, "lng": 77.57077217102052, "isStation": true},
-    {"name": "Majestic", "lat": 12.9756, "lng": 77.5728, "isStation": true},
-    {"name": "Chickpet", "lat": 12.967491656989456, "lng": 77.57465064525604, "isStation": true},
-    {"name": "KR Market", "lat": 12.960361129432874, "lng": 77.5745862722397, "isStation": true},
-    {"name": "National College", "lat": 12.950663258701582, "lng": 77.57369041442873, "isStation": true},
-    {"name": "Lalbagh", "lat": 12.946208932112555, "lng": 77.57999897003175, "isStation": true},
-    {"name": "South End Circle", "lat": 12.9385, "lng": 77.58, "isStation": true},
-    {"name": "Jayanagar", "lat": 12.9298, "lng": 77.5801, "isStation": true},
-    {"name": "RV Road", "lat": 12.92133265924013, "lng": 77.58023500442506, "isStation": true},
-    {"name": "Banashankari", "lat": 12.915476574680326, "lng": 77.57355093955995, "isStation": true},
-    {"name": "JP Nagar", "lat": 12.9073, "lng": 77.5731, "isStation": true},
-    {"name": "Yelachenahalli", "lat": 12.896045959807216, "lng": 77.57008552551271, "isStation": true},
-    {"name": "Konanakunte Cross", "lat": 12.888997039454898, "lng": 77.56272554397584, "isStation": true},
-    {"name": "Doddakallasandra", "lat": 12.88468657855462, "lng": 77.55266189575197, "isStation": true},
-    {"name": "Vajarahalli", "lat": 12.877617142664498, "lng": 77.54480838775635, "isStation": true},
-    {"name": "Thalaghattapura", "lat": 12.871258761655394, "lng": 77.53825306892396, "isStation": true},
-    {"name": "Silk Institute", "lat": 12.861764510948404, "lng": 77.52991676330568, "isStation": true}
+    {
+      "name": "Madavara",
+      "lat": 13.057529978885169,
+      "lng": 77.47281789779665,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.056585339137644,
+      "lng": 77.47658371925355,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.056318870159199,
+      "lng": 77.47753322124483,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.055953069615528,
+      "lng": 77.47843980789186,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.055195353122505,
+      "lng": 77.48025834560396,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.054819102379916,
+      "lng": 77.48118638992311,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.053815734195743,
+      "lng": 77.4840134382248,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.05314163309351,
+      "lng": 77.48585343360901,
+      "isStation": false
+    },
+    {
+      "name": "Chikkabidarakallu",
+      "lat": 13.052504092855676,
+      "lng": 77.48769342899324,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.051296928416697,
+      "lng": 77.49094426631929,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.051004258322708,
+      "lng": 77.49175429344177,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.050763853976493,
+      "lng": 77.4925857782364,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.050513014210395,
+      "lng": 77.49340116977693,
+      "isStation": false
+    },
+    {
+      "name": "Manjunathanagar",
+      "lat": 13.050220394307392,
+      "lng": 77.49417364597322,
+      "isStation": true
+    },
+    {
+      "name": "Nagasandra",
+      "lat": 13.048083006304285,
+      "lng": 77.49992430210115,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.046922840192762,
+      "lng": 77.50305175781251,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.046342760357897,
+      "lng": 77.50461280345918,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.046065780310991,
+      "lng": 77.50540137290955,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.045799263906455,
+      "lng": 77.50640451908113,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.045355010121474,
+      "lng": 77.50797629356386,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.045051926143861,
+      "lng": 77.50873804092409,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.044696554882798,
+      "lng": 77.50941932201385,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.043944068977886,
+      "lng": 77.51086771488191,
+      "isStation": false
+    },
+    {
+      "name": "Dasarahalli",
+      "lat": 13.04337965117424,
+      "lng": 77.51235365867615,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.042762923712042,
+      "lng": 77.51432776451112,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.042423240794557,
+      "lng": 77.51528263092042,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.042005029965651,
+      "lng": 77.5162321329117,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.041728181884285,
+      "lng": 77.5167042016983,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.041404162179099,
+      "lng": 77.51710116863251,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.04071959163697,
+      "lng": 77.51784145832063,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.040181259291495,
+      "lng": 77.51845836639406,
+      "isStation": false
+    },
+    {
+      "name": "Jalahalli",
+      "lat": 13.039533275547063,
+      "lng": 77.5196009874344,
+      "isStation": true
+    },
+    {
+      "name": "Peenya Industry",
+      "lat": 13.036387119607804,
+      "lng": 77.52548038959505,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.035874965832384,
+      "lng": 77.52636551856996,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.035498714260129,
+      "lng": 77.52736866474153,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.034975939365394,
+      "lng": 77.52958416938783,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.034557927955868,
+      "lng": 77.53062486648561,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.034009167372826,
+      "lng": 77.5315797328949,
+      "isStation": false
+    },
+    {
+      "name": "Peenya",
+      "lat": 13.032875096504121,
+      "lng": 77.53351628780366,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.031735776137014,
+      "lng": 77.53538310527803,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.03053374263817,
+      "lng": 77.53718018531801,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.030110217758718,
+      "lng": 77.53782927989961,
+      "isStation": false
+    },
+    {
+      "name": "Goraguntepalya",
+      "lat": 13.028338682885405,
+      "lng": 77.54093527793886,
+      "isStation": true
+    },
+    {
+      "name": "Yeshwanthpur",
+      "lat": 13.023248211385285,
+      "lng": 77.54987239837648,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.022621004917863,
+      "lng": 77.55091309547426,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.022296967719969,
+      "lng": 77.55136370658876,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.021898920522487,
+      "lng": 77.55171775817873,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.020133207525312,
+      "lng": 77.55271553993227,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.019213350138457,
+      "lng": 77.55311250686647,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.0183039243779,
+      "lng": 77.55338072776796,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.016458963020389,
+      "lng": 77.55383133888246,
+      "isStation": false
+    },
+    {
+      "name": "Sandal Soap Factory",
+      "lat": 13.01465055472074,
+      "lng": 77.55400300025941,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.013882246462263,
+      "lng": 77.55403518676759,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.013521602314142,
+      "lng": 77.55401372909547,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.013171412446939,
+      "lng": 77.5538957118988,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.012889183669415,
+      "lng": 77.55366504192354,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.012654002049082,
+      "lng": 77.55334854125978,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.012314273316738,
+      "lng": 77.55265116691591,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.011666105380634,
+      "lng": 77.55137443542482,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.01132639634708,
+      "lng": 77.55069315433504,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.010960475167716,
+      "lng": 77.5500762462616,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.010469204222414,
+      "lng": 77.54951834678651,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.00985769069054,
+      "lng": 77.54909992218019,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.0091729893403,
+      "lng": 77.5489228963852,
+      "isStation": false
+    },
+    {
+      "name": "Mahalakshmi",
+      "lat": 13.00846753549171,
+      "lng": 77.54882097244264,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.00741158238592,
+      "lng": 77.5486707687378,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.006888901607576,
+      "lng": 77.54864931106567,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.006366234765519,
+      "lng": 77.54871368408205,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 13.004348674965874,
+      "lng": 77.54907846450807,
+      "isStation": false
+    },
+    {
+      "name": "Rajajinagar",
+      "lat": 13.00025602353431,
+      "lng": 77.5496953725815,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998996334913825,
+      "lng": 77.54997968673707,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998384799116975,
+      "lng": 77.55015134811403,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998092084540778,
+      "lng": 77.55039811134338,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.997904330161766,
+      "lng": 77.5507038831711,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99782028804402,
+      "lng": 77.55109548568726,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.997883019246192,
+      "lng": 77.5514978170395,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998060728742944,
+      "lng": 77.55231320858002,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998363832617635,
+      "lng": 77.5538206100464,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998557258738504,
+      "lng": 77.55468964576723,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998677486279233,
+      "lng": 77.55558013916017,
+      "isStation": false
+    },
+    {
+      "name": "Kuvempu Road",
+      "lat": 12.998505014710673,
+      "lng": 77.5569534301758,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.998018876894198,
+      "lng": 77.55848765373231,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.997423049713959,
+      "lng": 77.56000578403473,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996701776195708,
+      "lng": 77.56151854991914,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996628523024157,
+      "lng": 77.56194770336153,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996612839017953,
+      "lng": 77.56234467029573,
+      "isStation": false
+    },
+    {
+      "name": "Srirampura",
+      "lat": 12.996567828878192,
+      "lng": 77.56313323974611,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996320108817713,
+      "lng": 77.56429195404054,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996283539324013,
+      "lng": 77.56465137004854,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996299224854837,
+      "lng": 77.56501078605653,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996398516900541,
+      "lng": 77.5653862953186,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.99644556294143,
+      "lng": 77.56576716899873,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996424669966096,
+      "lng": 77.56613731384279,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.996252151717224,
+      "lng": 77.56657719612123,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.995928051489923,
+      "lng": 77.56690442562105,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.995096974408247,
+      "lng": 77.56749987602234,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.993575908068127,
+      "lng": 77.56855666637422,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.992013021656971,
+      "lng": 77.56965637207033,
+      "isStation": false
+    },
+    {
+      "name": "Sampige Road",
+      "lat": 12.990439656112018,
+      "lng": 77.57077217102052,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.989409928991599,
+      "lng": 77.57154464721681,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.988918570268266,
+      "lng": 77.57178068161012,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.98842719854191,
+      "lng": 77.57188796997072,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.986283128403716,
+      "lng": 77.57202744483948,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.980858878159012,
+      "lng": 77.57193088531496,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.980199523700877,
+      "lng": 77.57218837738039,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.979143573693495,
+      "lng": 77.57261753082277,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.97800399298665,
+      "lng": 77.57283210754396,
+      "isStation": false
+    },
+    {
+      "name": "Majestic",
+      "lat": 12.9756,
+      "lng": 77.5728,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.973602517688022,
+      "lng": 77.57278919219972,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.973132037688963,
+      "lng": 77.57310032844543,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.972640637761021,
+      "lng": 77.573379278183,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.971971534399955,
+      "lng": 77.57364749908449,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.971365177664053,
+      "lng": 77.5736689567566,
+      "isStation": false
+    },
+    {
+      "name": "Chickpet",
+      "lat": 12.967491656989456,
+      "lng": 77.57465064525604,
+      "isStation": true
+    },
+    {
+      "name": "KR Market",
+      "lat": 12.960361129432874,
+      "lng": 77.5745862722397,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.957333529955774,
+      "lng": 77.57365822792055,
+      "isStation": false
+    },
+    {
+      "name": "National College",
+      "lat": 12.950663258701582,
+      "lng": 77.57369041442873,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.949366792079902,
+      "lng": 77.57369041442873,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948843956161555,
+      "lng": 77.5739371776581,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.94864527389308,
+      "lng": 77.5741356611252,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948535478183487,
+      "lng": 77.57439851760866,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948394320365296,
+      "lng": 77.57510662078859,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948310696207434,
+      "lng": 77.57580399513246,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948310392374465,
+      "lng": 77.57720947265626,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948342004129726,
+      "lng": 77.57835745811464,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.94834200713797,
+      "lng": 77.57896900177003,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.948184922994148,
+      "lng": 77.57950544357301,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9477355748012,
+      "lng": 77.5798809528351,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.947244130760225,
+      "lng": 77.5799882411957,
+      "isStation": false
+    },
+    {
+      "name": "Lalbagh",
+      "lat": 12.946208932112555,
+      "lng": 77.57999897003175,
+      "isStation": true
+    },
+    {
+      "name": "South End Circle",
+      "lat": 12.9385,
+      "lng": 77.58,
+      "isStation": true
+    },
+    {
+      "name": "Jayanagar",
+      "lat": 12.9298,
+      "lng": 77.5801,
+      "isStation": true
+    },
+    {
+      "name": "RV Road",
+      "lat": 12.92133265924013,
+      "lng": 77.58023500442506,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.918864751145707,
+      "lng": 77.58025646209718,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.918310518555213,
+      "lng": 77.58024573326112,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917787629586284,
+      "lng": 77.58015990257265,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917432116932542,
+      "lng": 77.57983803749086,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91721283796688,
+      "lng": 77.57935523986816,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917160220347851,
+      "lng": 77.57882952690126,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91721254312189,
+      "lng": 77.57829308509828,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9175676920453,
+      "lng": 77.57724165916444,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917651651438216,
+      "lng": 77.57565379142763,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917620300552649,
+      "lng": 77.57457017898561,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91740047418331,
+      "lng": 77.57414102554321,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916982421517053,
+      "lng": 77.5738298892975,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916501377274741,
+      "lng": 77.57373332977296,
+      "isStation": false
+    },
+    {
+      "name": "Banashankari",
+      "lat": 12.915476574680326,
+      "lng": 77.57355093955995,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.914430828915355,
+      "lng": 77.57343292236328,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91340600880275,
+      "lng": 77.57320761680604,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.912475260165138,
+      "lng": 77.57291793823244,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.911450416989618,
+      "lng": 77.5728213787079,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.909358917476027,
+      "lng": 77.57289648056032,
+      "isStation": false
+    },
+    {
+      "name": "JP Nagar",
+      "lat": 12.9073,
+      "lng": 77.5731,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.905583700188924,
+      "lng": 77.57331490516664,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.904830705958043,
+      "lng": 77.57328271865846,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.904088362912821,
+      "lng": 77.57318615913393,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.902027989175775,
+      "lng": 77.57344365119934,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.901180889303161,
+      "lng": 77.57329344749452,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.900344271680167,
+      "lng": 77.57306814193726,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.899528534308432,
+      "lng": 77.57278919219972,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.898827890593852,
+      "lng": 77.57236003875734,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.897384620207182,
+      "lng": 77.57127642631532,
+      "isStation": false
+    },
+    {
+      "name": "Yelachenahalli",
+      "lat": 12.896045959807216,
+      "lng": 77.57008552551271,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.894121658291244,
+      "lng": 77.56837964057924,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.892354235671666,
+      "lng": 77.56652355194093,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.89064946398421,
+      "lng": 77.56453871726991,
+      "isStation": false
+    },
+    {
+      "name": "Konanakunte Cross",
+      "lat": 12.888997039454898,
+      "lng": 77.56272554397584,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.888024392863754,
+      "lng": 77.56158828735352,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.887187689135754,
+      "lng": 77.56035447120668,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.886926161100572,
+      "lng": 77.55982875823975,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.886256861002428,
+      "lng": 77.55781173706056,
+      "isStation": false
+    },
+    {
+      "name": "Doddakallasandra",
+      "lat": 12.88468657855462,
+      "lng": 77.55266189575197,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.883861850986971,
+      "lng": 77.55008697509767,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.883464413016991,
+      "lng": 77.54840254783632,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.883160519490787,
+      "lng": 77.54743695259096,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.882617208195157,
+      "lng": 77.5468897819519,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.881853731192091,
+      "lng": 77.546546459198,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.880431334860374,
+      "lng": 77.54597783088686,
+      "isStation": false
+    },
+    {
+      "name": "Vajarahalli",
+      "lat": 12.877617142664498,
+      "lng": 77.54480838775635,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.876509251803752,
+      "lng": 77.5442934036255,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.875934010281606,
+      "lng": 77.54397153854372,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.87548433657667,
+      "lng": 77.5434994697571,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.875024070567381,
+      "lng": 77.54272699356079,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.874689367230308,
+      "lng": 77.54189014434816,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.873894479618885,
+      "lng": 77.54055976867677,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.873350567468094,
+      "lng": 77.53994822502136,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.872628899022468,
+      "lng": 77.53934741020204,
+      "isStation": false
+    },
+    {
+      "name": "Thalaghattapura",
+      "lat": 12.871258761655394,
+      "lng": 77.53825306892396,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.866416095692461,
+      "lng": 77.53440141677858,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.86511911086616,
+      "lng": 77.53345727920534,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.863947667165235,
+      "lng": 77.53237366676332,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.863466484900425,
+      "lng": 77.53171920776369,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.862974851142162,
+      "lng": 77.53096818923952,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.862430966467764,
+      "lng": 77.53036737442018,
+      "isStation": false
+    },
+    {
+      "name": "Silk Institute",
+      "lat": 12.861764510948404,
+      "lng": 77.52991676330568,
+      "isStation": true
+    }
   ],
   "yellow": [
-    {"name": "RV Road", "lat": 12.92133265924013, "lng": 77.58023500442506, "isStation": true},
-    {"name": "Waypoint", "lat": 12.917599873315924, "lng": 77.5803315639496, "isStation": false},
-    {"name": "Ragigudda", "lat": 12.917065788407735, "lng": 77.58819580078126, "isStation": true},
-    {"name": "Jayadeva Hospital", "lat": 12.916731478262284, "lng": 77.59994387626648, "isStation": true},
-    {"name": "BTM Layout", "lat": 12.916605219783715, "lng": 77.60793685913087, "isStation": true},
-    {"name": "Central Silk Board", "lat": 12.916553682134982, "lng": 77.62033939361574, "isStation": true},
-    {"name": "Bommanahalli", "lat": 12.910624279300166, "lng": 77.62642264366151, "isStation": true},
-    {"name": "Hongasandra", "lat": 12.90165148999969, "lng": 77.63195872306825, "isStation": true},
-    {"name": "Kudlu Gate", "lat": 12.889980107641264, "lng": 77.63914704322816, "isStation": true},
-    {"name": "Singasandra", "lat": 12.880755571672207, "lng": 77.6448440551758, "isStation": true},
-    {"name": "Hosa Road", "lat": 12.870777834150534, "lng": 77.65228986740112, "isStation": true},
-    {"name": "Beratena Agrahara", "lat": 12.863916240340716, "lng": 77.65782594680788, "isStation": true},
-    {"name": "Electronic City", "lat": 12.856594447941225, "lng": 77.66332983970644, "isStation": true},
-    {"name": "Konappana Agrahara", "lat": 12.846488005124836, "lng": 77.6710867881775, "isStation": true},
-    {"name": "Huskur Road", "lat": 12.839060641220536, "lng": 77.67728805541994, "isStation": true},
-    {"name": "Hebbagodi", "lat": 12.828997799245727, "lng": 77.68123626708986, "isStation": true, "isDepot": true, "depotName": "Hebbagodi Depot (Active)"},
-    {"name": "Bommasandra", "lat": 12.819416213584041, "lng": 77.68818855285646, "isStation": true}
+    {
+      "name": "RV Road",
+      "lat": 12.92133265924013,
+      "lng": 77.58023500442506,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917599873315924,
+      "lng": 77.5803315639496,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917358903620581,
+      "lng": 77.58059978485109,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.9171811741295,
+      "lng": 77.58092164993288,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917128893469606,
+      "lng": 77.58171558380128,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917066167494344,
+      "lng": 77.5843119621277,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917024271944536,
+      "lng": 77.58625388145448,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91702427495315,
+      "lng": 77.5867795944214,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91712880922815,
+      "lng": 77.58724093437196,
+      "isStation": false
+    },
+    {
+      "name": "Ragigudda",
+      "lat": 12.917065788407735,
+      "lng": 77.58819580078126,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.917076522540071,
+      "lng": 77.58933305740358,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916930164884581,
+      "lng": 77.59022355079652,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91693014984146,
+      "lng": 77.59112477302553,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916846512129144,
+      "lng": 77.59410738945009,
+      "isStation": false
+    },
+    {
+      "name": "Jayadeva Hospital",
+      "lat": 12.916731478262284,
+      "lng": 77.59994387626648,
+      "isStation": true
+    },
+    {
+      "name": "BTM Layout",
+      "lat": 12.916605219783715,
+      "lng": 77.60793685913087,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916480507677758,
+      "lng": 77.61409521102907,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916260905953019,
+      "lng": 77.61627316474916,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916260917987563,
+      "lng": 77.61829018592836,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916250460614485,
+      "lng": 77.61936306953432,
+      "isStation": false
+    },
+    {
+      "name": "Central Silk Board",
+      "lat": 12.916553682134982,
+      "lng": 77.62033939361574,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916909171969756,
+      "lng": 77.62146592140199,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916971949131058,
+      "lng": 77.62204527854921,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.916876906368607,
+      "lng": 77.62256026268007,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.91656377845976,
+      "lng": 77.6229250431061,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.915204663932842,
+      "lng": 77.62376189231874,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.913771996697072,
+      "lng": 77.62452363967897,
+      "isStation": false
+    },
+    {
+      "name": "Bommanahalli",
+      "lat": 12.910624279300166,
+      "lng": 77.62642264366151,
+      "isStation": true
+    },
+    {
+      "name": "Hongasandra",
+      "lat": 12.90165148999969,
+      "lng": 77.63195872306825,
+      "isStation": true
+    },
+    {
+      "name": "Kudlu Gate",
+      "lat": 12.889980107641264,
+      "lng": 77.63914704322816,
+      "isStation": true
+    },
+    {
+      "name": "Singasandra",
+      "lat": 12.880755571672207,
+      "lng": 77.6448440551758,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.878161776766342,
+      "lng": 77.64645338058473,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.877440104117765,
+      "lng": 77.64685034751894,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.87680212565364,
+      "lng": 77.64727950096132,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.875662086657632,
+      "lng": 77.6482665538788,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.873298274641902,
+      "lng": 77.6503908634186,
+      "isStation": false
+    },
+    {
+      "name": "Hosa Road",
+      "lat": 12.870777834150534,
+      "lng": 77.65228986740112,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.86735741179328,
+      "lng": 77.65512228012086,
+      "isStation": false
+    },
+    {
+      "name": "Beratena Agrahara",
+      "lat": 12.863916240340716,
+      "lng": 77.65782594680788,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.860255373851384,
+      "lng": 77.66069054603577,
+      "isStation": false
+    },
+    {
+      "name": "Electronic City",
+      "lat": 12.856594447941225,
+      "lng": 77.66332983970644,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.855568220513883,
+      "lng": 77.66430616378786,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.854323699110495,
+      "lng": 77.66540050506593,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.85043350308272,
+      "lng": 77.66841530799867,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.848487912998412,
+      "lng": 77.66989588737489,
+      "isStation": false
+    },
+    {
+      "name": "Konappana Agrahara",
+      "lat": 12.846488005124836,
+      "lng": 77.6710867881775,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.845464131950239,
+      "lng": 77.67171978950502,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.844764050388418,
+      "lng": 77.67264246940614,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.84398949822669,
+      "lng": 77.67347931861879,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.84154224570853,
+      "lng": 77.67544269561769,
+      "isStation": false
+    },
+    {
+      "name": "Huskur Road",
+      "lat": 12.839060641220536,
+      "lng": 77.67728805541994,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.837995713839101,
+      "lng": 77.67816781997682,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.836050433756919,
+      "lng": 77.67899394035341,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.834104711259744,
+      "lng": 77.67973423004152,
+      "isStation": false
+    },
+    {
+      "name": "Hebbagodi",
+      "lat": 12.828997799245727,
+      "lng": 77.68123626708986,
+      "isStation": true
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.82695990990124,
+      "lng": 77.68209457397462,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.824961609541411,
+      "lng": 77.6831889152527,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.822200056295616,
+      "lng": 77.68573164939882,
+      "isStation": false
+    },
+    {
+      "name": "Waypoint",
+      "lat": 12.820808703121108,
+      "lng": 77.68701910972597,
+      "isStation": false
+    },
+    {
+      "name": "Bommasandra",
+      "lat": 12.819416213584041,
+      "lng": 77.68818855285646,
+      "isStation": true
+    }
   ]
 };
 
@@ -1033,7 +5082,7 @@ function createTrip({ id, lineKey, direction, origin, dest, depSec, isShortLoop 
     totalSec: endSec - depSec,
     isShortLoop,
     stationTimings,
-    platform: direction === 0 ? "Platform 2" : "Platform 1"
+    platform: direction === 0 ? "Platform 1" : "Platform 2"
   };
 }
 
@@ -1055,14 +5104,20 @@ function generateDayTrips(dayKey) {
       const term0 = config.termini[0];
       const term1 = config.termini[1];
 
-      const dep0 = new Set();
+      // Direction 0 (term0 -> term1)
+      let lastDep0 = -Infinity;
       (sched[term0] || []).forEach(b => {
         let cur = timeToSec(b.from) + (b.offsetSec || 0);
         const end = timeToSec(b.to) + (b.offsetSec || 0);
         const step = Math.round(b.frequencyMin * 60);
+
+        if (lastDep0 > -Infinity && (cur - lastDep0 < step * 0.75)) {
+          cur = lastDep0 + step;
+        }
+
         while (cur <= end) {
-          if (!dep0.has(cur)) {
-            dep0.add(cur);
+          if (cur - lastDep0 >= 180) {
+            lastDep0 = cur;
             const t = createTrip({ id: `${lineKey}-0-${idCounter++}`, lineKey, direction: 0, origin: term0, dest: term1, depSec: cur });
             if (t) trips.push(t);
           }
@@ -1070,14 +5125,20 @@ function generateDayTrips(dayKey) {
         }
       });
 
-      const dep1 = new Set();
+      // Direction 1 (term1 -> term0)
+      let lastDep1 = -Infinity;
       (sched[term1] || []).forEach(b => {
         let cur = timeToSec(b.from) + (b.offsetSec || 0);
         const end = timeToSec(b.to) + (b.offsetSec || 0);
         const step = Math.round(b.frequencyMin * 60);
+
+        if (lastDep1 > -Infinity && (cur - lastDep1 < step * 0.75)) {
+          cur = lastDep1 + step;
+        }
+
         while (cur <= end) {
-          if (!dep1.has(cur)) {
-            dep1.add(cur);
+          if (cur - lastDep1 >= 180) {
+            lastDep1 = cur;
             const t = createTrip({ id: `${lineKey}-1-${idCounter++}`, lineKey, direction: 1, origin: term1, dest: term0, depSec: cur });
             if (t) trips.push(t);
           }
@@ -1088,13 +5149,40 @@ function generateDayTrips(dayKey) {
 
     if (loopsConfig?.loops) {
       loopsConfig.loops.forEach(loop => {
-        const loopDep = new Set();
-        let cur = timeToSec(loop.from) + (loop.offsetSec || 0);
-        const end = timeToSec(loop.to) + (loop.offsetSec || 0);
+        let lastLoopDep = -Infinity;
+        const loopStartSec = timeToSec(loop.from) + (loop.offsetSec || 0);
+        const loopEndSec = timeToSec(loop.to) + (loop.offsetSec || 0);
         const step = Math.round(loop.freqMin * 60);
-        while (cur <= end) {
-          if (!loopDep.has(cur)) {
-            loopDep.add(cur);
+
+        // 1. Generate introductory feeder run from terminal -> short-loop turnaround station
+        if (loop.feeder) {
+          const testTrip = createTrip({ id: 'temp', lineKey, direction: loop.feeder.direction, origin: loop.feeder.origin, dest: loop.feeder.dest, depSec: 0 });
+          if (testTrip) {
+            const feederRuntime = testTrip.totalSec;
+            const cleaningSec = (loop.feeder.cleaningMin || 4) * 60;
+            const feederDepSec = loopStartSec - feederRuntime - cleaningSec;
+
+            const feederTrip = createTrip({
+              id: `${lineKey}-feeder-${idCounter++}`,
+              lineKey,
+              direction: loop.feeder.direction,
+              origin: loop.feeder.origin,
+              dest: loop.feeder.dest,
+              depSec: feederDepSec,
+              isShortLoop: true
+            });
+            if (feederTrip) {
+              feederTrip.isFeeder = true;
+              trips.push(feederTrip);
+            }
+          }
+        }
+
+        // 2. Cyclic short-loop trips
+        let cur = loopStartSec;
+        while (cur <= loopEndSec) {
+          if (cur - lastLoopDep >= 180) {
+            lastLoopDep = cur;
             const t = createTrip({ id: `${lineKey}-loop-${idCounter++}`, lineKey, direction: loop.direction, origin: loop.origin, dest: loop.dest, depSec: cur, isShortLoop: true });
             if (t) trips.push(t);
           }
@@ -1265,7 +5353,7 @@ function buildUnifiedPopup(stationName) {
                 diff: arrDiff,
                 mins: diffMins,
                 dest: trip.destStation,
-                plat: trip.direction === 0 ? 2 : 1,
+                plat: trip.direction === 0 ? 1 : 2,
                 lineId: trip.lineKey,
                 isDue: arrDiff <= 60 && depDiff >= 0,
                 isShortLoop: trip.isShortLoop
@@ -1316,13 +5404,35 @@ function updateSimulation() {
     const dayKey = getDayKey();
     const allTrips = generateDayTrips(dayKey);
     const activeTripIds = new Set();
+    const TERMINAL_PREP_SEC = 90; // 90 seconds pre-departure passenger boarding dwell
+
+    // Strict single-train terminal lock: prevent multiple trains at a terminal
+    const occupiedTermini = new Set();
+    allTrips.forEach(trip => {
+        let elapsed = currentSecs - trip.startSec;
+        if (elapsed < -43200) elapsed += 86400;
+        if (elapsed > 43200) elapsed -= 86400;
+        if (elapsed >= 0 && elapsed <= trip.totalSec) {
+            const timings = trip.stationTimings;
+            if (currentSecs <= timings[0].depSec) {
+                occupiedTermini.add(`${trip.lineKey}_${trip.originStation}`);
+            }
+            const lastSt = timings[timings.length - 1];
+            if (currentSecs >= lastSt.arrSec - 60 && currentSecs <= lastSt.depSec) {
+                occupiedTermini.add(`${trip.lineKey}_${lastSt.stationName}`);
+            }
+        }
+    });
 
     allTrips.forEach(trip => {
         let elapsed = currentSecs - trip.startSec;
         if (elapsed < -43200) elapsed += 86400;
         if (elapsed > 43200) elapsed -= 86400;
 
-        if (elapsed >= 0 && elapsed <= trip.totalSec) {
+        if (elapsed >= -TERMINAL_PREP_SEC && elapsed <= trip.totalSec) {
+            if (elapsed < 0 && occupiedTermini.has(`${trip.lineKey}_${trip.originStation}`)) {
+                return; // Ensure only 1 train at the terminal at any time
+            }
             activeTripIds.add(trip.id);
             const lineIdx = LINE_INDICES[trip.lineKey];
             const track = lineIdx.track;
@@ -1333,78 +5443,106 @@ function updateSimulation() {
 
             const timings = trip.stationTimings;
 
-            // Check if train is dwelling at a station
-            for (let s = 0; s < timings.length; s++) {
-                const st = timings[s];
-                if (currentSecs >= st.arrSec && currentSecs <= st.depSec) {
-                    isWaiting = true;
-                    const trackIdx = lineIdx.stationTrackMap.get(st.stationName);
-                    if (trackIdx !== undefined) {
-                        const pt = track[trackIdx];
-                        currentCoord = trip.direction === 0 ? [pt.p2Lat, pt.p2Lng] : [pt.p1Lat, pt.p1Lng];
-
-                        if (s < timings.length - 1) {
-                            const nextIdx = lineIdx.stationTrackMap.get(timings[s + 1].stationName);
-                            if (nextIdx !== undefined) {
-                                const npt = track[nextIdx];
-                                const nlat = trip.direction === 0 ? npt.p2Lat : npt.p1Lat;
-                                const nlng = trip.direction === 0 ? npt.p2Lng : npt.p1Lng;
-                                heading = -Math.atan2(nlat - currentCoord[0], nlng - currentCoord[1]) * (180 / Math.PI);
-                            }
+            if (elapsed < 0) {
+                // Train is staged / boarding at origin terminal platform
+                isWaiting = true;
+                const origSt = timings[0];
+                const trackIdx = lineIdx.stationTrackMap.get(origSt.stationName);
+                if (trackIdx !== undefined) {
+                    const pt = track[trackIdx];
+                    currentCoord = trip.direction === 0 ? [pt.p1Lat, pt.p1Lng] : [pt.p2Lat, pt.p2Lng];
+                    if (timings.length > 1) {
+                        const nextIdx = lineIdx.stationTrackMap.get(timings[1].stationName);
+                        if (nextIdx !== undefined) {
+                            const npt = track[nextIdx];
+                            const nlat = trip.direction === 0 ? npt.p1Lat : npt.p2Lat;
+                            const nlng = trip.direction === 0 ? npt.p1Lng : npt.p2Lng;
+                            heading = -Math.atan2(nlat - currentCoord[0], nlng - currentCoord[1]) * (180 / Math.PI);
                         }
                     }
-                    break;
                 }
-            }
+            } else {
+                // Check if train is dwelling at an intermediate station or terminus
+                for (let s = 0; s < timings.length; s++) {
+                    const st = timings[s];
+                    if (currentSecs >= st.arrSec && currentSecs <= st.depSec) {
+                        isWaiting = true;
+                        const trackIdx = lineIdx.stationTrackMap.get(st.stationName);
+                        if (trackIdx !== undefined) {
+                            const pt = track[trackIdx];
+                            currentCoord = trip.direction === 0 ? [pt.p1Lat, pt.p1Lng] : [pt.p2Lat, pt.p2Lng];
 
-            // Train is moving between two stations
-            if (!isWaiting) {
-                for (let s = 0; s < timings.length - 1; s++) {
-                    const stA = timings[s];
-                    const stB = timings[s + 1];
-
-                    if (currentSecs > stA.depSec && currentSecs < stB.arrSec) {
-                        const prog = (currentSecs - stA.depSec) / (stB.arrSec - stA.depSec);
-                        const idxA = lineIdx.stationTrackMap.get(stA.stationName);
-                        const idxB = lineIdx.stationTrackMap.get(stB.stationName);
-
-                        if (idxA !== undefined && idxB !== undefined) {
-                            const step = idxB > idxA ? 1 : -1;
-                            const subTrack = [];
-                            for (let k = idxA; k !== idxB + step; k += step) {
-                                subTrack.push(track[k]);
-                            }
-
-                            const dists = [0];
-                            let totalDist = 0;
-                            for (let k = 1; k < subTrack.length; k++) {
-                                totalDist += getDistanceKM(subTrack[k-1].lat, subTrack[k-1].lng, subTrack[k].lat, subTrack[k].lng);
-                                dists.push(totalDist);
-                            }
-
-                            const targetDist = prog * totalDist;
-                            let segIdx = 0;
-                            for (let k = 0; k < dists.length - 1; k++) {
-                                if (targetDist >= dists[k] && targetDist <= dists[k+1]) {
-                                    segIdx = k;
-                                    break;
+                            if (s < timings.length - 1) {
+                                const nextIdx = lineIdx.stationTrackMap.get(timings[s + 1].stationName);
+                                if (nextIdx !== undefined) {
+                                    const npt = track[nextIdx];
+                                    const nlat = trip.direction === 0 ? npt.p1Lat : npt.p2Lat;
+                                    const nlng = trip.direction === 0 ? npt.p1Lng : npt.p2Lng;
+                                    heading = -Math.atan2(nlat - currentCoord[0], nlng - currentCoord[1]) * (180 / Math.PI);
+                                }
+                            } else if (s > 0) {
+                                const prevIdx = lineIdx.stationTrackMap.get(timings[s - 1].stationName);
+                                if (prevIdx !== undefined) {
+                                    const ppt = track[prevIdx];
+                                    const plat = trip.direction === 0 ? ppt.p1Lat : ppt.p2Lat;
+                                    const plng = trip.direction === 0 ? ppt.p1Lng : ppt.p2Lng;
+                                    heading = -Math.atan2(currentCoord[0] - plat, currentCoord[1] - plng) * (180 / Math.PI);
                                 }
                             }
-
-                            const pA = subTrack[segIdx];
-                            const pB = subTrack[segIdx + 1] || pA;
-                            const segSpan = dists[segIdx + 1] - dists[segIdx] || 1;
-                            const segProg = (targetDist - dists[segIdx]) / segSpan;
-
-                            const latA = trip.direction === 0 ? pA.p2Lat : pA.p1Lat;
-                            const lngA = trip.direction === 0 ? pA.p2Lng : pA.p1Lng;
-                            const latB = trip.direction === 0 ? pB.p2Lat : pB.p1Lat;
-                            const lngB = trip.direction === 0 ? pB.p2Lng : pB.p1Lng;
-
-                            currentCoord = [latA + (latB - latA) * segProg, lngA + (lngB - lngA) * segProg];
-                            heading = -Math.atan2(latB - latA, lngB - lngA) * (180 / Math.PI);
                         }
                         break;
+                    }
+                }
+
+                // Train is moving between two stations
+                if (!isWaiting) {
+                    for (let s = 0; s < timings.length - 1; s++) {
+                        const stA = timings[s];
+                        const stB = timings[s + 1];
+
+                        if (currentSecs > stA.depSec && currentSecs < stB.arrSec) {
+                            const prog = (currentSecs - stA.depSec) / (stB.arrSec - stA.depSec);
+                            const idxA = lineIdx.stationTrackMap.get(stA.stationName);
+                            const idxB = lineIdx.stationTrackMap.get(stB.stationName);
+
+                            if (idxA !== undefined && idxB !== undefined) {
+                                const step = idxB > idxA ? 1 : -1;
+                                const subTrack = [];
+                                for (let k = idxA; k !== idxB + step; k += step) {
+                                    subTrack.push(track[k]);
+                                }
+
+                                const dists = [0];
+                                let totalDist = 0;
+                                for (let k = 1; k < subTrack.length; k++) {
+                                    totalDist += getDistanceKM(subTrack[k-1].lat, subTrack[k-1].lng, subTrack[k].lat, subTrack[k].lng);
+                                    dists.push(totalDist);
+                                }
+
+                                const targetDist = prog * totalDist;
+                                let segIdx = 0;
+                                for (let k = 0; k < dists.length - 1; k++) {
+                                    if (targetDist >= dists[k] && targetDist <= dists[k+1]) {
+                                        segIdx = k;
+                                        break;
+                                    }
+                                }
+
+                                const pA = subTrack[segIdx];
+                                const pB = subTrack[segIdx + 1] || pA;
+                                const segSpan = dists[segIdx + 1] - dists[segIdx] || 1;
+                                const segProg = (targetDist - dists[segIdx]) / segSpan;
+
+                                const latA = trip.direction === 0 ? pA.p1Lat : pA.p2Lat;
+                                const lngA = trip.direction === 0 ? pA.p1Lng : pA.p2Lng;
+                                const latB = trip.direction === 0 ? pB.p1Lat : pB.p2Lat;
+                                const lngB = trip.direction === 0 ? pB.p1Lng : pB.p2Lng;
+
+                                currentCoord = [latA + (latB - latA) * segProg, lngA + (lngB - lngA) * segProg];
+                                heading = -Math.atan2(latB - latA, lngB - lngA) * (180 / Math.PI);
+                            }
+                            break;
+                        }
                     }
                 }
             }
